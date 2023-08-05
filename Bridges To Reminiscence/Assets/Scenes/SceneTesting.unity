@@ -253,7 +253,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 100}
   m_SizeDelta: {x: 1500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &145501350
@@ -791,7 +791,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 100}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &477841621
@@ -3144,21 +3144,13 @@ PrefabInstance:
       propertyPath: _chatDialogueDisplay
       value: 
       objectReference: {fileID: 559955744}
-    - target: {fileID: 5745316920827819043, guid: d6374850f929d2742ba1fafd61cafbe9, type: 3}
+    - target: {fileID: 6817468698196362342, guid: d6374850f929d2742ba1fafd61cafbe9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.54882944
+      value: -0.3448281
       objectReference: {fileID: 0}
-    - target: {fileID: 5745316920827819043, guid: d6374850f929d2742ba1fafd61cafbe9, type: 3}
+    - target: {fileID: 6817468698196362342, guid: d6374850f929d2742ba1fafd61cafbe9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.1765446
-      objectReference: {fileID: 0}
-    - target: {fileID: 5745316920827819043, guid: d6374850f929d2742ba1fafd61cafbe9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7778269
-      objectReference: {fileID: 0}
-    - target: {fileID: 5745316920827819043, guid: d6374850f929d2742ba1fafd61cafbe9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.2502073
+      value: -0.14123066
       objectReference: {fileID: 0}
     - target: {fileID: 9080973599225588991, guid: d6374850f929d2742ba1fafd61cafbe9, type: 3}
       propertyPath: m_RootOrder
