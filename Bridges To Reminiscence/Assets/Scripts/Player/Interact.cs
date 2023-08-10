@@ -13,11 +13,15 @@ public class Interact : MonoBehaviour
     [SerializeField] private DialogueTrigger _dialogueTrigger;
 
     Collider[] _checkedColliders;
+    InteractedItem item;
+    List<TriggerActivateGameObject> allTrigger;
+
 
     private void Start()
     {
         _inputReader.OnInteractPressed += CheckInteract;
     }
+
 
 
     private void CheckInteract()
@@ -27,10 +31,16 @@ public class Interact : MonoBehaviour
         Collider closestCollider = SearchForClosestItem();
 
         //Trigger Isi Itemnya
-        InteractedItem item = closestCollider.GetComponent<InteractedItem>();
+        item = closestCollider.GetComponent<InteractedItem>();
+        if (item.IsInteracted) return;
 
-        item.TriggerInteract();
+        item.InteractedWithObject();
+        allTrigger = item.TriggerActivateGameObjects;
 
+        Vector3 movTowardsPos = item.ConversationTransform.position;
+
+        _movement.SetMoveTowardDestination(movTowardsPos);
+        
         _cameraHandler.TriggerInteractCamera();
         //Disable Movement and Face Target
         _movement.DisableMovement();
@@ -38,6 +48,14 @@ public class Interact : MonoBehaviour
 
         //TriggerDialogue
         _dialogueTrigger.RegisterDialogues(item.DialogueData);
+    }
+
+    public void TriggerWhateverInsideItem()
+    {
+        allTrigger[0].RegisterTrigger();
+        item.TriggerInteract();
+
+        allTrigger.RemoveAt(0);
     }
 
 

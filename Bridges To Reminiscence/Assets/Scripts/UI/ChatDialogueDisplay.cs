@@ -13,24 +13,37 @@ public class ChatDialogueDisplay : MonoBehaviour
 
     [Space(10)]
     [SerializeField] GameObject _dropdownOBJ;
-    [SerializeField] GameObject _chatGO;
+    [SerializeField] GameObject _chatGO;   
 
     const float wordSpeed = 0.025f;
     StringBuilder sb = new StringBuilder();
 
     public event Action OnButtonPressed;
 
-
     private void Start()
     {
         _button.onClick.AddListener(() => OnButtonPressed?.Invoke());
     }
 
-
     public void DisplayString(string text, Color color)
     {
+        _dropdownOBJ.SetActive(true);
+        _button.enabled = true;
+
         _chatGO.SetActive(true);
         _tmpText.color = color;
+        StartCoroutine(PlayString(text));  
+    }
+
+    public void DisplayCutsceneString(string text)
+    {
+        _dropdownOBJ?.SetActive(false);
+        _button.enabled = false;    
+
+        _chatGO.SetActive(true);
+        _tmpText.color = Color.white;
+
+
         StartCoroutine(PlayString(text));
     }
 
@@ -41,6 +54,7 @@ public class ChatDialogueDisplay : MonoBehaviour
 
     IEnumerator PlayString(string text)
     {
+
         sb.Clear();
         foreach (char character in text)
         {
@@ -50,6 +64,7 @@ public class ChatDialogueDisplay : MonoBehaviour
             yield return new WaitForSeconds(wordSpeed);
         }
     }
+
 
 
 }

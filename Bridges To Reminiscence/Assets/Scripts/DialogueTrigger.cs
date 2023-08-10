@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,11 +8,14 @@ public class DialogueTrigger : MonoBehaviour
     //REGISTER DIALOGUE
     //PLAYS DIALOGUE
     //DISPLAY NEXT DIALOGUES
+    [SerializeField] Interact _interact;
     [SerializeField] ChatDialogueDisplay _chatDialogueDisplay;
     [SerializeField] Movement _movement;
     [SerializeField] CameraHandler _cameraHandler;
 
     List<DialogueChat> chatList = new List<DialogueChat>();
+
+    bool isCutsceneSentence = false;
 
     private void Start()
     {
@@ -20,20 +24,55 @@ public class DialogueTrigger : MonoBehaviour
 
     public void RegisterDialogues(Dialogue dialogue)
     {
+        chatList.Clear();
+
         foreach (DialogueChat chat in dialogue.Chats) 
         {
             chatList.Add(chat);
         }
 
-
+        isCutsceneSentence = false;
         DisplayDialogues();
     }
 
-    void DisplayDialogues()
+    public void RegisterCutsceneDialogues(Dialogue dialogue)
+    {
+        chatList.Clear();
+
+
+        foreach (DialogueChat chat in dialogue.Chats)
+        {
+            chatList.Add(chat);
+        }
+
+        isCutsceneSentence = true;
+        DisplayDialogues();
+    }
+
+
+
+    public void DisplayDialogues()
     {
         if (chatList.Count > 0)
         {
-            _chatDialogueDisplay.DisplayString(chatList[0].text, chatList[0].textColor);
+
+            if (!isCutsceneSentence)
+                _chatDialogueDisplay.DisplayString(chatList[0].Text, chatList[0].TextColor);
+            else
+                _chatDialogueDisplay.DisplayCutsceneString(chatList[0].Text);
+
+
+            if (chatList[0].IsCameraSpecial)
+            {
+                _cameraHandler.MoveInpectCameraToCustomLoc(chatList[0].CameraPos, chatList[0].CameraRotation);
+            }
+            else
+            {
+                _cameraHandler.ResetInspectCameraPosition();
+            }
+
+            if (chatList[0].TriggerSomethingHere) _interact.TriggerWhateverInsideItem();
+
             chatList.RemoveAt(0);
         }
         else
@@ -45,4 +84,7 @@ public class DialogueTrigger : MonoBehaviour
             _cameraHandler.TriggerNormalFreeLookCamera();
         }
     }
+
+
+
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class FollowPlayer : MonoBehaviour
 {
     [SerializeField] Transform _followSpot;
-    [SerializeField] float _maxDistanceToPlayer = 2f;
+    [SerializeField] float _maxDistanceToPlayer = 0.5f;
     [SerializeField] float _followSpeed = 1f;
 
 

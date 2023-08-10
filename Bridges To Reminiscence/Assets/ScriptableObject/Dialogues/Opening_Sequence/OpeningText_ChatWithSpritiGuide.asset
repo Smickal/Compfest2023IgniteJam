@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: OpeningText_ChatWithSpritiGuide
+  m_EditorClassIdentifier: 
+  _chats:
+  - TriggerSomethingHere: 0
+    Text: I see that you have reached this place
+    TextColor: {r: 0, g: 0.0543108, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 2.034939, y: 0.6835679, z: 9.469616}
+    CameraRotation: {x: 12.032, y: -86.287, z: 0.002}
+  - TriggerSomethingHere: 0
+    Text: So hows' your life ?
+    TextColor: {r: 0, g: 0.05490196, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: 1.452189, y: 0.4522167, z: -0.3876781}
+    CameraRotation: {x: -0.413, y: -51.359, z: -0.027}
+  - TriggerSomethingHere: 0
+    Text: .......... (PLACE HOLDER)
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: 1.847044, y: 0.9218448, z: 3.162584}
+    CameraRotation: {x: 4.744, y: -144.869, z: -0.028}
+  - TriggerSomethingHere: 1
+    Text: Tell you what, go through the door behind me  (PLACE HOLDER)
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.729819, y: 0.4330996, z: -0.785675}
+    CameraRotation: {x: 1.134, y: 37.677, z: -0.028}
+  - TriggerSomethingHere: 0
+    Text: Wait, before you go, let me give you something.
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 3.14309, y: 2.529368, z: -1.945673}
+    CameraRotation: {x: 24.339, y: -42.157, z: -0.027}
+  - TriggerSomethingHere: 1
+    Text: this orb will follow and help you in the dark.
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 3.14309, y: 2.529368, z: -1.945673}
+    CameraRotation: {x: 24.339, y: -42.157, z: -0.027}
+  - TriggerSomethingHere: 0
+    Text: think of it as a light source
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 3.14309, y: 2.529368, z: -1.945673}
+    CameraRotation: {x: 24.339, y: -42.157, z: -0.027}
+  - TriggerSomethingHere: 0
+    Text: Best of luck, Good bye!
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 3.14309, y: 2.529368, z: -1.945673}
+    CameraRotation: {x: 24.339, y: -42.157, z: -0.027}

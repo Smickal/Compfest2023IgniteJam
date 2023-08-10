@@ -10,11 +10,13 @@ public class Movement : MonoBehaviour
     [SerializeField] float _rotationSpeed = 0.5f;
 
     Camera mainCamera;
+    Transform objToFaced;
     Vector3 movement = new();
     Vector3 verticalGravity;
-    Transform objToFaced;
+    Vector3 moveTowardPos;
 
     bool isFacingTarget = false;
+    bool isMoveTowardsActivated = false;
     public bool IsActivated { get; private set; } = true;
 
     private void Start()
@@ -25,6 +27,12 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
+        if(isMoveTowardsActivated)
+        {
+            MoveTowardsAnObj();
+        }
+
+
         _characterController.SimpleMove(movement + verticalGravity);
 
         if(isFacingTarget && objToFaced != null)
@@ -37,6 +45,34 @@ public class Movement : MonoBehaviour
 
         if (!IsActivated) return;
         CalculateMovementAndRotationFromInput();
+    }
+
+
+    public void SetMoveTowardDestination(Vector3 pos)
+    {
+        moveTowardPos = pos;
+        isMoveTowardsActivated = true;
+    }
+
+    private void MoveTowardsAnObj()
+    {
+        Vector3 dir = moveTowardPos - transform.position;
+        dir.y = 0f;
+        dir.Normalize();
+
+        _characterController.SimpleMove(dir * _velocity * 2 * Time.deltaTime);
+
+
+        Vector3 curPos = transform.position;
+        curPos.y = 0f;
+
+        Vector3 destPos = moveTowardPos;
+        destPos.y = 0f;
+
+        if(Vector3.Distance(curPos, destPos) <= 0.2f)
+        {
+            isMoveTowardsActivated = false;
+        }
     }
 
     private void CalculateMovementAndRotationFromInput()

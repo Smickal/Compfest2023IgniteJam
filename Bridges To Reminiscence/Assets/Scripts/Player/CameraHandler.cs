@@ -5,6 +5,12 @@ using Cinemachine;
 
 public class CameraHandler : MonoBehaviour
 {
+    const float cameraWeight = 3f;
+    const float cameraRadius = 2f;
+    const int activatedCameraPriority = 50;
+    const int resetCameraPriority = 40;
+
+
     [SerializeField] CinemachineFreeLook _freeLookCamera;
     [SerializeField] CinemachineVirtualCamera _closeUpDialogueCamera;
 
@@ -13,10 +19,9 @@ public class CameraHandler : MonoBehaviour
     List<CinemachineVirtualCameraBase> Cameras = new List<CinemachineVirtualCameraBase>();
 
 
-    const float cameraWeight = 3f;
-    const float cameraRadius = 2f;
-    const int activatedCameraPriority = 5;
-    const int resetCameraPriority = 1;
+
+    Vector3 defaultCameraPos;
+    Quaternion defaultCameraDir;
 
     private void Start()
     {
@@ -25,6 +30,9 @@ public class CameraHandler : MonoBehaviour
 
         ResetCameraPriority();
         TriggerNormalFreeLookCamera();
+
+        defaultCameraPos = _closeUpDialogueCamera.transform.position;
+        defaultCameraDir = _closeUpDialogueCamera.transform.rotation;
     }
 
 
@@ -40,6 +48,7 @@ public class CameraHandler : MonoBehaviour
 
     public void TriggerInteractCamera()
     {
+        Cursor.visible = true;
         ResetCameraPriority();
 
         _closeUpDialogueCamera.Priority = activatedCameraPriority;
@@ -47,6 +56,7 @@ public class CameraHandler : MonoBehaviour
 
     public void TriggerNormalFreeLookCamera()
     {
+        Cursor.visible = false;    
         ResetCameraPriority();
 
         _freeLookCamera.Priority = activatedCameraPriority;
@@ -60,5 +70,16 @@ public class CameraHandler : MonoBehaviour
         }
     }
 
+    public void MoveInpectCameraToCustomLoc(Vector3 pos, Vector3 cameraRot)
+    {
+        _closeUpDialogueCamera.transform.localPosition = pos;
+        _closeUpDialogueCamera.transform.rotation = Quaternion.Euler(cameraRot);
+    }
 
+
+    public void ResetInspectCameraPosition()
+    {
+        _closeUpDialogueCamera.transform.localPosition = defaultCameraPos;
+        _closeUpDialogueCamera.transform.rotation = defaultCameraDir;
+    }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,13 +12,24 @@ public class InteractedItem : MonoBehaviour, IInteractable
     [SerializeField] Collider _playerCollider;
     [SerializeField] LayerMask _playerLayerMask;
     [SerializeField] Dialogue _dialogueData;
+    [SerializeField] Transform _conversationTransform;
+    [SerializeField] InteractManager _interactManager;
+    [SerializeField] bool isThisKeyItem;
+
+    [Space(5)]
+    [SerializeField] List<TriggerActivateGameObject> _allTriggerItem;
+
+    public event Action OnTriggerAction;
 
     Collider[] _checkedCollider;
 
     float checkDistance = 1f;
     bool IsTriggered = false;
-
+    bool isInteracted = false;
     public Dialogue DialogueData { get { return _dialogueData; } }
+    public Transform ConversationTransform { get { return _conversationTransform; } }
+    public bool IsInteracted { get { return isInteracted; } }
+    public List<TriggerActivateGameObject> TriggerActivateGameObjects { get { return _allTriggerItem; } }
 
 
     void Update()
@@ -40,7 +52,7 @@ public class InteractedItem : MonoBehaviour, IInteractable
 
     public void TriggerInteract()
     {
-        Debug.Log("Interacted with " + gameObject.name);
+        OnTriggerAction?.Invoke();
     }
 
 
@@ -56,5 +68,12 @@ public class InteractedItem : MonoBehaviour, IInteractable
         gameObject.layer = LayerMask.NameToLayer(defaultLayerString);
         IsTriggered = false;
 
+    }
+
+    public void InteractedWithObject()
+    {
+        isInteracted = true;
+        if(isThisKeyItem)
+         _interactManager.IncreaseInteractCount();
     }
 }
