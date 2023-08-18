@@ -24,6 +24,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void RegisterDialogues(Dialogue dialogue)
     {
+        if (dialogue == null) return;
         chatList.Clear();
 
         foreach (DialogueChat chat in dialogue.Chats) 

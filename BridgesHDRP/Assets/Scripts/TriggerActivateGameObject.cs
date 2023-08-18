@@ -17,6 +17,5 @@ public class TriggerActivateGameObject : MonoBehaviour
         _gameObject.SetActive(true);
         interactedItem.OnTriggerAction -= TriggerObject;
     }
-
 }
     

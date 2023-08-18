@@ -16,6 +16,8 @@ public class InteractedItem : MonoBehaviour, IInteractable
     [SerializeField] Transform _conversationTransform;
     [SerializeField] InteractManager _interactManager;
     [SerializeField] OutlineObject _outlineSystem;
+    [Space(5)]
+    [SerializeField] bool ActivatedOutline = true;
     [SerializeField] bool isThisKeyItem;
 
     [Space(5)]
@@ -38,6 +40,7 @@ public class InteractedItem : MonoBehaviour, IInteractable
     {
         _checkedCollider = Physics.OverlapSphere(transform.position, checkDistance, _playerLayerMask);
 
+        if (!ActivatedOutline) return;
         if(_checkedCollider.Length == 0 && IsTriggered)
         {
             DeactivateOutline();

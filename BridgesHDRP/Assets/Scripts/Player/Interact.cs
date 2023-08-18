@@ -35,6 +35,8 @@ public class Interact : MonoBehaviour
         if (item.IsInteracted) return;
 
         item.InteractedWithObject();
+        item.TriggerInteract();
+
         allTrigger = item.TriggerActivateGameObjects;
 
         Vector3 movTowardsPos = item.ConversationTransform.position;
