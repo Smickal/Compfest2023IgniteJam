@@ -19,6 +19,7 @@ public class InteractedItem : MonoBehaviour, IInteractable
     [Space(5)]
     [SerializeField] bool ActivatedOutline = true;
     [SerializeField] bool isThisKeyItem;
+    [SerializeField] bool isThisADialogue = true;
 
     [Space(5)]
     [SerializeField] List<TriggerActivateGameObject> _allTriggerItem;
@@ -35,50 +36,54 @@ public class InteractedItem : MonoBehaviour, IInteractable
     public bool IsInteracted { get { return isInteracted; } }
     public List<TriggerActivateGameObject> TriggerActivateGameObjects { get { return _allTriggerItem; } }
 
-
-    void Update()
+    private void Update()
     {
-        _checkedCollider = Physics.OverlapSphere(transform.position, checkDistance, _playerLayerMask);
-
-        if (!ActivatedOutline) return;
-        if(_checkedCollider.Length == 0 && IsTriggered)
+        if(IsTriggered)
         {
-            DeactivateOutline();
-        }
+            float distance = Vector3.Distance(_playerCollider.transform.position, transform.position);
 
-       
-        if(_checkedCollider.Length > 0 && !IsTriggered)
-        {
-            ActivateOutline();
+            if(distance > checkDistance)
+            {
+                DeactivateOutline();
+            }
         }
     }
 
-    
 
     public void TriggerInteract()
     {
         OnTriggerAction?.Invoke();
+        
+        if (isThisKeyItem)
+            _interactManager.IncreaseInteractCount();
     }
 
 
-    private void ActivateOutline()
+    public void ActivateOutline()
     {
+        if (IsTriggered) return;
+
         _outlineSystem.enabled = true;
         IsTriggered = true;
 
     }
 
-    private void DeactivateOutline()
+    public void DeactivateOutline()
     {
+        if(!IsTriggered) return;
+
         _outlineSystem.enabled = false;
         IsTriggered = false;
-
     }
 
-    public void InteractedWithObject()
+    public bool IsThisADialogueinteract()
+    {
+        return isThisADialogue;
+    }
+
+    public void Interacted()
     {
         isInteracted = true;
-        if(isThisKeyItem)
-         _interactManager.IncreaseInteractCount();
     }
+
 }

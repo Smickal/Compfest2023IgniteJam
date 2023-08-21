@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8498151499708872542}
   - component: {fileID: 7552835362091542766}
   - component: {fileID: 8427209322298754687}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,8 +93,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2791750198165972202}
   - component: {fileID: 7683460279960277502}
-  - component: {fileID: 1178388954099715083}
-  m_Layer: 0
+  - component: {fileID: 5912785236630791660}
+  - component: {fileID: 5890917707306994943}
+  m_Layer: 9
   m_Name: Glow_Obj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,24 +132,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _followSpot: {fileID: 0}
-  _maxDistanceToPlayer: 1
-  _followSpeed: 2
---- !u!111 &1178388954099715083
-Animation:
+  _maxDistanceToPlayer: 0.2
+  _followSpeed: 200
+  _rigidBody: {fileID: 5912785236630791660}
+--- !u!54 &5912785236630791660
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6317302529724570292}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!135 &5890917707306994943
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6317302529724570292}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 1dce3d676bdf0e34bb45c7c57dbeeff5, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 1dce3d676bdf0e34bb45c7c57dbeeff5, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_Radius: 0.2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7387425997452280988
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,7 +194,7 @@ GameObject:
   - component: {fileID: 3309298691350927298}
   - component: {fileID: 1490092498151714006}
   - component: {fileID: 4072765696106906375}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

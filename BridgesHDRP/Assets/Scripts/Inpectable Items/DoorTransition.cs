@@ -8,6 +8,7 @@ public class DoorTransition : MonoBehaviour
     [SerializeField] InteractedItem _interactedItem;
     [SerializeField] TransitionManager _transitionManager;
 
+
     private void Start()
     {
         _interactedItem.OnTriggerAction += TriggerNextScene;

@@ -14,31 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _chats:
   - TriggerSomethingHere: 0
-    Text: its dark, i cant see anything
+    Text: It's dark, I can't see...
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 0, y: 0, z: 0}
     CameraRotation: {x: 0, y: 0, z: 0}
   - TriggerSomethingHere: 0
-    Text: hello? is anyone there?
+    Text: The last thing I remembered that I was in the hospital...
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 0, y: 0, z: 0}
     CameraRotation: {x: 0, y: 0, z: 0}
   - TriggerSomethingHere: 0
-    Text: "i guess im alone here\u2026"
+    Text: What is that ?
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 0, y: 0, z: 0}
     CameraRotation: {x: 0, y: 0, z: 0}
   - TriggerSomethingHere: 0
-    Text: Wait.....
+    Text: Is that a person ? There's a door behind him.
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 0, y: 0, z: 0}
     CameraRotation: {x: 0, y: 0, z: 0}
   - TriggerSomethingHere: 0
-    Text: What is that?
+    Text: I should go check.
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 0, y: 0, z: 0}

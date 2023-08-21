@@ -16,26 +16,38 @@ public class Interact : MonoBehaviour
     InteractedItem item;
     List<TriggerActivateGameObject> allTrigger;
 
+    Collider closestCollider;
 
     private void Start()
     {
         _inputReader.OnInteractPressed += CheckInteract;
     }
 
+    private void Update()
+    {
+        _checkedColliders = Physics.OverlapSphere(transform.position, _interactCheckRadius, _inspectItemLayerMask);
+        closestCollider = SearchForClosestItem();
+
+        if (closestCollider == null) return;
+        item = closestCollider.GetComponent<InteractedItem>();
+
+        if (item != null)
+        {
+            item.ActivateOutline();
+        }
+    }
+
 
 
     private void CheckInteract()
-    {
-        _checkedColliders = Physics.OverlapSphere(transform.position, _interactCheckRadius, _inspectItemLayerMask);
+    {      
         if (_checkedColliders.Length == 0) return;
-        Collider closestCollider = SearchForClosestItem();
+       
 
         //Trigger Isi Itemnya
-        item = closestCollider.GetComponent<InteractedItem>();
-        if (item.IsInteracted) return;
-
-        item.InteractedWithObject();
         item.TriggerInteract();
+
+        if(item.IsThisADialogueinteract() == false || item.IsInteracted == true) return;
 
         allTrigger = item.TriggerActivateGameObjects;
 
@@ -50,6 +62,7 @@ public class Interact : MonoBehaviour
 
         //TriggerDialogue
         _dialogueTrigger.RegisterDialogues(item.DialogueData);
+        item.Interacted();
     }
 
     public void TriggerWhateverInsideItem()

@@ -49,6 +49,7 @@ public class CameraHandler : MonoBehaviour
     public void TriggerInteractCamera(Transform target)
     {
         Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
         ResetCameraPriority();
 
         currTarget = target;
@@ -61,6 +62,7 @@ public class CameraHandler : MonoBehaviour
     public void TriggerNormalFreeLookCamera()
     {
         Cursor.visible = false;    
+        Cursor.lockState = CursorLockMode.Locked;
         ResetCameraPriority();
 
 

@@ -7,7 +7,9 @@ public class InteractManager: MonoBehaviour
     int interactedCount = 0;
 
 
-    public event Action OnAllItemInteracted;
+    bool allItemIsInteracted = false;
+
+    public bool IsAllItemInteracted { get {  return allItemIsInteracted; } }
 
 
     public void IncreaseInteractCount()
@@ -21,8 +23,7 @@ public class InteractManager: MonoBehaviour
     {
         if(interactedCount >= interactedItems.Length)
         {
-            OnAllItemInteracted?.Invoke();
-            Debug.Log("All Item Interacted");
+            allItemIsInteracted = true;
         }
     }
 

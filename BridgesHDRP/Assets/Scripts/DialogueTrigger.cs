@@ -26,6 +26,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (dialogue == null) return;
         chatList.Clear();
+        _movement.DisableMovement();
 
         foreach (DialogueChat chat in dialogue.Chats) 
         {

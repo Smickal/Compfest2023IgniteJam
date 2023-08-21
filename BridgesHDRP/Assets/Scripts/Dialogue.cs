@@ -14,10 +14,9 @@ public class Dialogue : ScriptableObject
 [System.Serializable]
 public class DialogueChat
 {
+    [field: TextArea(2,7)]public string Text;
     public bool TriggerSomethingHere = false;
 
-    [field: Header("Text Related")]
-    [field: TextArea(2,7)]public string Text;
     public Color TextColor;
 
     [field: Header("Camera")]
