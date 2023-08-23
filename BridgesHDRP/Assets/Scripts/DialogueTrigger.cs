@@ -20,6 +20,7 @@ public class DialogueTrigger : MonoBehaviour
     private void Start()
     {
         _chatDialogueDisplay.OnButtonPressed += DisplayDialogues;
+        _chatDialogueDisplay.OnSentenceDone += RemoveSentenceInZeroIndex;
     }
 
     public void RegisterDialogues(Dialogue dialogue)
@@ -59,9 +60,21 @@ public class DialogueTrigger : MonoBehaviour
         {
 
             if (!isCutsceneSentence)
-                _chatDialogueDisplay.DisplayString(chatList[0].Text, chatList[0].TextColor);
+            {
+                if(_chatDialogueDisplay.IsSentenceDone)
+                {
+                    _chatDialogueDisplay.DisplayString(chatList[0].Text, chatList[0].TextColor);
+                }
+                else
+                {
+                    _chatDialogueDisplay.DisplayDoneString(chatList[0].Text, chatList[0].TextColor);
+                }
+            }
             else
+            {
                 _chatDialogueDisplay.DisplayCutsceneString(chatList[0].Text);
+            }
+
 
 
             if (chatList[0].IsCameraSpecial)
@@ -73,9 +86,11 @@ public class DialogueTrigger : MonoBehaviour
                 _cameraHandler.ResetInspectCameraPosition();
             }
 
-            if (chatList[0].TriggerSomethingHere) _interact.TriggerWhateverInsideItem();
-
-            chatList.RemoveAt(0);
+            
+            if(_chatDialogueDisplay.IsSentenceDone)
+            {
+                RemoveSentenceInZeroIndex();
+            }
         }
         else
         {
@@ -88,5 +103,9 @@ public class DialogueTrigger : MonoBehaviour
     }
 
 
-
+    public void RemoveSentenceInZeroIndex()
+    {
+        if (chatList[0].TriggerSomethingHere) _interact.TriggerWhateverInsideItem();
+        chatList.RemoveAt(0);
+    }
 }

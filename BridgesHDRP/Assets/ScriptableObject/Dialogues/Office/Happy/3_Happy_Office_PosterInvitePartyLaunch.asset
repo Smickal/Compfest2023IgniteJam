@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 3_Happy_Office_PosterInvitePartyLaunch
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: This poster, announcing the post-launch product party, takes me back to
+      a time when anticipation crackled in the air, and the scent of success was
+      almost palpable.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: -1.171853, y: 0.7524205, z: 0.4644746}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: "I remember that day \u2013 the day when we launched that product we had
+      poured our hearts and souls into."
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: -1.171853, y: 0.7524205, z: 0.4644746}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: The culmination of countless late nights, brainstorming sessions, and collaborative
+      efforts stretched our limits and tested our resolve.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: -1.171853, y: 0.7524205, z: 0.4644746}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: When the positive feedback started pouring in, it was like music to our
+      ears.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: -1.171853, y: 0.7524205, z: 0.4644746}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: The early mornings and the late nights suddenly seemed worth it, every
+      moment of doubt and struggle was just a stepping stone towards this incredible
+      achievement.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: -1.171853, y: 0.7524205, z: 0.4644746}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: And then came the poster of invitation to this very party.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: -1.171853, y: 0.7524205, z: 0.4644746}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: That feeling of elation and relief, knowing that we had made it, that our
+      hard work had translated into something tangible, something celebrated.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: -1.171853, y: 0.7524205, z: 0.4644746}
+    CameraRotation: {x: 0, y: 0, z: 0}

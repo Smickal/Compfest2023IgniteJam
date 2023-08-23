@@ -133,7 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _followSpot: {fileID: 0}
   _maxDistanceToPlayer: 0.2
-  _followSpeed: 200
+  _followSpeed: 3
   _rigidBody: {fileID: 5912785236630791660}
 --- !u!54 &5912785236630791660
 Rigidbody:

@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/1_Scene_Opening/Scene_Opening.unity
     guid: 46831d813343ac544bafd78c78e5f2e4
   - enabled: 1
-    path: Assets/Scenes/3_Scene_Office/3_Scene_Office.unity
+    path: Assets/Scenes/3_Scene_Office_Sad/3_Scene_Office_SAd.unity
     guid: 96c9c1dbc7b20da439ff7b400efc2130
+  - enabled: 1
+    path: Assets/Scenes/3_Scene_Office_Happy/3_Scene_Office_Happy.unity
+    guid: b80c7facbd94f3943b9ed15e79e65317
+  - enabled: 1
+    path: Assets/Scenes/SceneTesting/SceneTesting.unity
+    guid: 327591005d5595e418ac68142d2abbd5
   m_configObjects: {}

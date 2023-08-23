@@ -16,6 +16,8 @@ public class TransitionManager : MonoBehaviour
     [SerializeField] Animator _animator;
     [SerializeField] InteractManager _interactManager;
     [SerializeField] InstructionTextManager _instructionTextManager;
+    [SerializeField] Door _door;
+
 
     [Space(5)] 
     [SerializeField] bool isActivatedAtBeginning = false;
@@ -34,6 +36,11 @@ public class TransitionManager : MonoBehaviour
         {
             _instructionTextManager.TriggerInstructionText(ErrorText);
             return;
+        }
+
+        if(_door != null)
+        {
+            _door.OpenDoor();
         }
 
         _animator.SetTrigger(TriggerTransitionHash);

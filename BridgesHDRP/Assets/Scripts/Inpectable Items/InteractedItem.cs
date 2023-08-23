@@ -6,17 +6,22 @@ using UnityEngine;
 
 public class InteractedItem : MonoBehaviour, IInteractable
 {
-    const string outlineLayerString = "Outlined";
-    const string defaultLayerString = "Inspectable";
-
-    
+    [SerializeField] float checkDistance = 1f;
+    [Space(10)]
     [SerializeField] Collider _playerCollider;
     [SerializeField] LayerMask _playerLayerMask;
+
+    [Space(10)]
+    [Header("DialogueDetails")]
     [SerializeField] Dialogue _dialogueData;
     [SerializeField] Transform _conversationTransform;
     [SerializeField] InteractManager _interactManager;
+
+    [Space(10)]
+    [Header("Outline")]
     [SerializeField] OutlineObject _outlineSystem;
-    [Space(5)]
+
+    [Space(10)]
     [SerializeField] bool ActivatedOutline = true;
     [SerializeField] bool isThisKeyItem;
     [SerializeField] bool isThisADialogue = true;
@@ -26,9 +31,8 @@ public class InteractedItem : MonoBehaviour, IInteractable
 
     public event Action OnTriggerAction;
 
-    Collider[] _checkedCollider;
 
-    float checkDistance = 1f;
+    
     bool IsTriggered = false;
     bool isInteracted = false;
     public Dialogue DialogueData { get { return _dialogueData; } }
@@ -38,15 +42,25 @@ public class InteractedItem : MonoBehaviour, IInteractable
 
     private void Update()
     {
-        if(IsTriggered)
+        if (IsTriggered)
         {
-            float distance = Vector3.Distance(_playerCollider.transform.position, transform.position);
+            Vector3 colliderPos = _playerCollider.transform.position;
+            Vector3 playerPos = transform.position;
 
-            if(distance > checkDistance)
+            colliderPos.y = 0f;
+            playerPos.y = 0f;
+
+            float distance = Vector3.Distance(colliderPos, playerPos);
+
+            if (distance > checkDistance)
             {
                 DeactivateOutline();
             }
+
+            if(isInteracted) DeactivateOutline();
         }
+
+
     }
 
 
@@ -65,7 +79,7 @@ public class InteractedItem : MonoBehaviour, IInteractable
 
         _outlineSystem.enabled = true;
         IsTriggered = true;
-
+        //Debug.Log("activate outline + " + gameObject.name);
     }
 
     public void DeactivateOutline()
@@ -74,6 +88,7 @@ public class InteractedItem : MonoBehaviour, IInteractable
 
         _outlineSystem.enabled = false;
         IsTriggered = false;
+        //Debug.Log("OFf outline + " + gameObject.name);
     }
 
     public bool IsThisADialogueinteract()

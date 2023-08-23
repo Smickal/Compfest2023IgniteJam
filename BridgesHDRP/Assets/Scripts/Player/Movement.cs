@@ -31,16 +31,18 @@ public class Movement : MonoBehaviour
         {
             MoveTowardsAnObj();
         }
+        else
+        {
+            _characterController.SimpleMove((movement + verticalGravity) * Time.deltaTime);
+        }
 
-
-        _characterController.SimpleMove(movement + verticalGravity);
 
         if(isFacingTarget && objToFaced != null)
         {
             Vector3 direction = objToFaced.position - transform.position;
             direction.Normalize();
             direction.y = 0f;
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(direction), _rotationSpeed * Time.deltaTime);     ;
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(direction), _rotationSpeed * Time.deltaTime);
         }
 
         if (!IsActivated) return;
@@ -96,7 +98,7 @@ public class Movement : MonoBehaviour
 
         movement = verticalValue * forward + horizontalValue * right;
 
-        movement *= _velocity * Time.deltaTime;
+        movement *= _velocity;
 
         if(_inputReader.MovementValue == Vector2.zero) { return; }
         transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(movement), _rotationSpeed * Time.deltaTime);

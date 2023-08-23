@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Interact : MonoBehaviour
 {
-    const float _interactCheckRadius = 1f;    
+    const float _interactCheckRadius = 1.5f;    
     
     [SerializeField] private LayerMask _inspectItemLayerMask;
     [SerializeField] private InputReader _inputReader;
@@ -26,22 +26,20 @@ public class Interact : MonoBehaviour
     private void Update()
     {
         _checkedColliders = Physics.OverlapSphere(transform.position, _interactCheckRadius, _inspectItemLayerMask);
-        closestCollider = SearchForClosestItem();
 
+        closestCollider = SearchForClosestItem();
+        item = null;
         if (closestCollider == null) return;
         item = closestCollider.GetComponent<InteractedItem>();
 
-        if (item != null)
-        {
-            item.ActivateOutline();
-        }
+        item.ActivateOutline();
     }
 
 
 
     private void CheckInteract()
     {      
-        if (_checkedColliders.Length == 0) return;
+        if (item == null) return;
        
 
         //Trigger Isi Itemnya
@@ -84,7 +82,10 @@ public class Interact : MonoBehaviour
         foreach(Collider collider in _checkedColliders)
         {
             float tempDistance = Vector3.Distance(transform.position, collider.transform.position);
-            if ( tempDistance < closestDistance)
+
+            if (collider.GetComponent<InteractedItem>().IsInteracted == true) continue;
+
+            if (tempDistance < closestDistance)
             {
                 closestDistance = tempDistance;
                 closestItem = collider;

@@ -7,7 +7,7 @@ public class DoorTransition : MonoBehaviour
     // Start is called before the first frame update]
     [SerializeField] InteractedItem _interactedItem;
     [SerializeField] TransitionManager _transitionManager;
-
+    
 
     private void Start()
     {

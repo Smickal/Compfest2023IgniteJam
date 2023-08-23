@@ -22,17 +22,21 @@ public class CameraHandler : MonoBehaviour
 
     Vector3 defaultCameraPos;
     Quaternion defaultCameraDir;
+    float defaultCameraSpeed;
+
 
     private void Start()
     {
         Cameras.Add(_freeLookCamera);
         Cameras.Add(_closeUpDialogueCamera);
 
+        defaultCameraSpeed = _freeLookCamera.m_XAxis.m_MaxSpeed;
+
         ResetCameraPriority();
         TriggerNormalFreeLookCamera();
 
         defaultCameraPos = _closeUpDialogueCamera.transform.localPosition;
-        defaultCameraDir = _closeUpDialogueCamera.transform.rotation;
+        defaultCameraDir = _closeUpDialogueCamera.transform.rotation;    
     }
 
 
@@ -48,6 +52,8 @@ public class CameraHandler : MonoBehaviour
 
     public void TriggerInteractCamera(Transform target)
     {
+        DisableFreeLookCamera();
+
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
         ResetCameraPriority();
@@ -61,6 +67,8 @@ public class CameraHandler : MonoBehaviour
 
     public void TriggerNormalFreeLookCamera()
     {
+        EnableFreeLookCamera();
+
         Cursor.visible = false;    
         Cursor.lockState = CursorLockMode.Locked;
         ResetCameraPriority();
@@ -89,5 +97,22 @@ public class CameraHandler : MonoBehaviour
     {
         _closeUpDialogueCamera.transform.localPosition = defaultCameraPos;
         _closeUpDialogueCamera.transform.rotation = defaultCameraDir;
+    }
+
+
+    public void DisableFreeLookCamera()
+    {
+        _freeLookCamera.m_XAxis.m_MaxSpeed = 0;
+    }
+
+    public void EnableFreeLookCamera()
+    {
+        StartCoroutine(EnableCamera());      
+    }
+
+    IEnumerator EnableCamera()
+    {
+        yield return new WaitForSeconds(1.9f);
+        _freeLookCamera.m_XAxis.m_MaxSpeed = defaultCameraSpeed;
     }
 }

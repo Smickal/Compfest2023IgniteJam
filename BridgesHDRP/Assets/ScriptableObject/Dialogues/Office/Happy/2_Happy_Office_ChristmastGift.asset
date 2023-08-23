@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 2_Happy_Office_ChristmastGift
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: There's something truly magical about the way Christmas transforms even
+      the most ordinary places into realms of joy and togetherness.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.206398, y: 0.7524201, z: 0.6486408}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: It's a time when the office, with its ringing phones and bustling cubicles,
+      becomes a canvas for memories that last a lifetime
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.206398, y: 0.7524201, z: 0.6486408}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: "I can still see it so vividly \u2013 that moment when the whole office
+      gathered around."
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.206398, y: 0.7524201, z: 0.6486408}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: The air was filled with laughter, the aroma of holiday treats, and the
+      joyous anticipation of discovering what lay beneath the colorful wrapping paper.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.206398, y: 0.7524201, z: 0.6486408}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: I remember the spirited conversations that flowed effortlessly, transcending
+      departmental divides and forging connections that went beyond just work.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.206398, y: 0.7524201, z: 0.6486408}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: It was as if the holiday spirit had sprinkled its magic dust, uniting us
+      all in a shared celebration of the season and of each other.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.206398, y: 0.7524201, z: 0.6486408}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: But what truly touched my heart that night was the thoughtful gift I received.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.206398, y: 0.7524201, z: 0.6486408}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: It wasn't the grandest or the most expensive, but it was filled with a
+      sincerity that warmed me from the inside out.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.206398, y: 0.7524201, z: 0.6486408}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: "As I unwrapped the carefully wrapped package, I found a simple yet elegant
+      mug \u2013 a reminder of those countless coffee breaks we shared, the countless
+      moments of connection that brewed more than just caffeine."
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.206398, y: 0.7524201, z: 0.6486408}
+    CameraRotation: {x: 0, y: 0, z: 0}
