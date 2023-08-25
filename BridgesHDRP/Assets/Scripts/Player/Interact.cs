@@ -11,6 +11,7 @@ public class Interact : MonoBehaviour
     [SerializeField] private CameraHandler _cameraHandler;
     [SerializeField] private Movement _movement;
     [SerializeField] private DialogueTrigger _dialogueTrigger;
+    [SerializeField] private BlinkAndFadeManager _blinkAndFadeManager;
 
     Collider[] _checkedColliders;
     InteractedItem item;
@@ -38,30 +39,41 @@ public class Interact : MonoBehaviour
 
 
     private void CheckInteract()
-    {      
+    {
         if (item == null) return;
-       
+
 
         //Trigger Isi Itemnya
         item.TriggerInteract();
 
-        if(item.IsThisADialogueinteract() == false || item.IsInteracted == true) return;
+        if (item.IsThisADialogueinteract() == false || item.IsInteracted == true) return;
+        StartCoroutine(StartDialogue());
+    }
 
+
+    IEnumerator StartDialogue()
+    {
         allTrigger = item.TriggerActivateGameObjects;
+        _blinkAndFadeManager.TriggerFadeToBlack();
 
         Vector3 movTowardsPos = item.ConversationTransform.position;
 
+        yield return new WaitForSeconds(0.4f);
+
         _movement.SetMoveTowardDestination(movTowardsPos);
-        
+
         _cameraHandler.TriggerInteractCamera(item.transform);
         //Disable Movement and Face Target
         _movement.DisableMovement();
         _movement.FaceTarget(item.transform);
 
+        yield return new WaitForSeconds(0.9f);
+
         //TriggerDialogue
         _dialogueTrigger.RegisterDialogues(item.DialogueData);
         item.Interacted();
     }
+
 
     public void TriggerWhateverInsideItem()
     {

@@ -13,32 +13,32 @@ MonoBehaviour:
   m_Name: OpeningCutscene_Monologue
   m_EditorClassIdentifier: 
   _chats:
-  - TriggerSomethingHere: 0
-    Text: It's dark, I can't see...
+  - Text: It's dark, I can't see...
+    TriggerSomethingHere: 0
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 0, y: 0, z: 0}
     CameraRotation: {x: 0, y: 0, z: 0}
-  - TriggerSomethingHere: 0
-    Text: The last thing I remembered that I was in the hospital...
+  - Text: The last thing I remembered that I was in the hospital...
+    TriggerSomethingHere: 0
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 0, y: 0, z: 0}
     CameraRotation: {x: 0, y: 0, z: 0}
-  - TriggerSomethingHere: 0
-    Text: What is that ?
+  - Text: What is that ?
+    TriggerSomethingHere: 0
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 0, y: 0, z: 0}
     CameraRotation: {x: 0, y: 0, z: 0}
-  - TriggerSomethingHere: 0
-    Text: Is that a person ? There's a door behind him.
+  - Text: Is that a person ?
+    TriggerSomethingHere: 0
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 0, y: 0, z: 0}
     CameraRotation: {x: 0, y: 0, z: 0}
-  - TriggerSomethingHere: 0
-    Text: I should go check.
+  - Text: I should go check.
+    TriggerSomethingHere: 0
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 0, y: 0, z: 0}

@@ -15,6 +15,7 @@ public class CameraHandler : MonoBehaviour
     [SerializeField] CinemachineVirtualCamera _closeUpDialogueCamera;
 
     [SerializeField] CinemachineTargetGroup _targetGroup;
+    [SerializeField] float defaultCameraSpeed = 200f;
 
     List<CinemachineVirtualCameraBase> Cameras = new List<CinemachineVirtualCameraBase>();
 
@@ -22,15 +23,12 @@ public class CameraHandler : MonoBehaviour
 
     Vector3 defaultCameraPos;
     Quaternion defaultCameraDir;
-    float defaultCameraSpeed;
 
 
     private void Start()
     {
         Cameras.Add(_freeLookCamera);
         Cameras.Add(_closeUpDialogueCamera);
-
-        defaultCameraSpeed = _freeLookCamera.m_XAxis.m_MaxSpeed;
 
         ResetCameraPriority();
         TriggerNormalFreeLookCamera();

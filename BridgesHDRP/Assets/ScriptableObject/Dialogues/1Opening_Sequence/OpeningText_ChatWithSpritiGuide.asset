@@ -13,103 +13,109 @@ MonoBehaviour:
   m_Name: OpeningText_ChatWithSpritiGuide
   m_EditorClassIdentifier: 
   _chats:
-  - TriggerSomethingHere: 0
-    Text: Whe-where am I? Am I Dead? Is-is this... the afterlife? Who are you?
+  - Text: Whe-where am I? Am I Dead? Is-is this... the afterlife? Who are you?
+    TriggerSomethingHere: 0
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 2.034939, y: 0.6835679, z: 9.469616}
     CameraRotation: {x: 12.032, y: -86.287, z: 0.002}
-  - TriggerSomethingHere: 0
-    Text: Yes, this place is the space between realms, where souls find solace before
+  - Text: Yes, this place is the space between realms, where souls find solace before
       their final journey. I am the gatekeeper of the afterlife, you can call me
       Maya.
+    TriggerSomethingHere: 0
     TextColor: {r: 0.6839622, g: 1, b: 0.9934039, a: 1}
     IsCameraSpecial: 1
     CameraPos: {x: 1.452189, y: 0.4522167, z: -0.3876781}
     CameraRotation: {x: -0.413, y: -51.359, z: -0.027}
-  - TriggerSomethingHere: 0
-    Text: This is beyond anything I could have imagined.
+  - Text: This is beyond anything I could have imagined.
+    TriggerSomethingHere: 0
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     IsCameraSpecial: 1
     CameraPos: {x: 1.847044, y: 0.9218448, z: 3.162584}
     CameraRotation: {x: 4.744, y: -144.869, z: -0.028}
-  - TriggerSomethingHere: 1
-    Text: Indeed, this place is a reflection of your consciousness, a realm shaped
+  - Text: Indeed, this place is a reflection of your consciousness, a realm shaped
       by your emotions and memories.
+    TriggerSomethingHere: 0
     TextColor: {r: 0.6839622, g: 1, b: 0.9934039, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 3.391197, y: 3.799129, z: -5.996929}
     CameraRotation: {x: 1.134, y: 37.677, z: -0.028}
-  - TriggerSomethingHere: 0
-    Text: So, what now? What's my purpose here?
+  - Text: So, what now? What's my purpose here?
+    TriggerSomethingHere: 0
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 3.14309, y: 2.529368, z: -1.945673}
     CameraRotation: {x: 24.339, y: -42.157, z: -0.027}
-  - TriggerSomethingHere: 0
-    Text: This is where souls come to reconcile their past, understand their journey,
+  - Text: This is where souls come to reconcile their past, understand their journey,
       and find peace. Your presence here signifies the end of your mortal journey
       and the beginning of introspection.
+    TriggerSomethingHere: 0
     TextColor: {r: 0.6839622, g: 1, b: 0.9934039, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 3.14309, y: 2.529368, z: -1.945673}
     CameraRotation: {x: 24.339, y: -42.157, z: -0.027}
-  - TriggerSomethingHere: 0
-    Text: "I see\u2026"
+  - Text: "I see\u2026"
+    TriggerSomethingHere: 0
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 3.14309, y: 2.529368, z: -1.945673}
     CameraRotation: {x: 24.339, y: -42.157, z: -0.027}
-  - TriggerSomethingHere: 0
-    Text: I will not be accompanying you on this journey, as this path is yours alone
+  - Text: I will not be accompanying you on this journey, as this path is yours alone
       to walk.
+    TriggerSomethingHere: 0
     TextColor: {r: 0.6839622, g: 1, b: 0.9934039, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 3.14309, y: 2.529368, z: -1.945673}
     CameraRotation: {x: 24.339, y: -42.157, z: -0.027}
-  - TriggerSomethingHere: 0
-    Text: 'You''ll find echoes of things that hold the most meaning and memories
+  - Text: 'You''ll find echoes of things that hold the most meaning and memories
       throughout your mortal journey. '
+    TriggerSomethingHere: 0
     TextColor: {r: 0.6839622, g: 1, b: 0.9934039, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 3.14309, y: 2.529368, z: -1.945673}
     CameraRotation: {x: 24.339, y: -42.157, z: -0.027}
-  - TriggerSomethingHere: 0
-    Text: So, it's a place to find closure?
+  - Text: So, it's a place to find closure?
+    TriggerSomethingHere: 0
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 3.14309, y: 2.529368, z: -1.945673}
     CameraRotation: {x: 24.339, y: -42.157, z: -0.027}
-  - TriggerSomethingHere: 0
-    Text: Precisely. Here, time behaves differently. You have the chance to confront
+  - Text: Precisely. Here, time behaves differently. You have the chance to confront
       your past, confront your fears, and seek the understanding you might not have
       found in life.
+    TriggerSomethingHere: 0
     TextColor: {r: 0.6839622, g: 1, b: 0.9934039, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 3.14309, y: 2.529368, z: -1.945673}
     CameraRotation: {x: 24.339, y: -42.157, z: -0.027}
-  - TriggerSomethingHere: 0
-    Text: Alright, I'm ready to face my past, find closure and move forward.
+  - Text: Alright, I'm ready to face my past, find closure and move forward.
+    TriggerSomethingHere: 0
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 3.14309, y: 2.529368, z: -1.945673}
     CameraRotation: {x: 24.339, y: -42.157, z: -0.027}
-  - TriggerSomethingHere: 1
-    Text: Great! Before you go, I will give you this orb, think of it as a light
+  - Text: Great! Before you go, I will give you this orb, think of it as a light
       source.
+    TriggerSomethingHere: 1
     TextColor: {r: 0.6839622, g: 1, b: 0.9934039, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 3.14309, y: 2.529368, z: -1.945673}
     CameraRotation: {x: 24.339, y: -42.157, z: -0.027}
-  - TriggerSomethingHere: 0
-    Text: "Thank you Maya, I\u2019ll make sure to make the most of this opportunity."
+  - Text: "Thank you Maya, I\u2019ll make sure to make the most of this opportunity."
+    TriggerSomethingHere: 0
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 3.14309, y: 2.529368, z: -1.945673}
     CameraRotation: {x: 24.339, y: -42.157, z: -0.027}
-  - TriggerSomethingHere: 0
-    Text: Farewell, brave soul. May your journey bring you clarity, peace, and understanding
+  - Text: Farewell, brave soul. May your journey bring you clarity, peace, and understanding
       of what you seek.
+    TriggerSomethingHere: 0
+    TextColor: {r: 0.6839622, g: 1, b: 0.9934039, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 3.14309, y: 2.529368, z: -1.945673}
+    CameraRotation: {x: 24.339, y: -42.157, z: -0.027}
+  - Text: Please proceed through the door behind me.
+    TriggerSomethingHere: 1
     TextColor: {r: 0.6839622, g: 1, b: 0.9934039, a: 1}
     IsCameraSpecial: 0
     CameraPos: {x: 3.14309, y: 2.529368, z: -1.945673}

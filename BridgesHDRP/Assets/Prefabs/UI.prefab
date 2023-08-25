@@ -327,14 +327,14 @@ GameObject:
   - component: {fileID: 949182242019952374}
   - component: {fileID: 4906055668260409207}
   - component: {fileID: 7373993466422347575}
-  - component: {fileID: 8945690958670876099}
+  - component: {fileID: 5078363060129613215}
   m_Layer: 5
-  m_Name: FadeBlack_Animation
+  m_Name: UI_BlinkingEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4907591807586729889
 RectTransform:
   m_ObjectHideFlags: 0
@@ -407,22 +407,27 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!111 &8945690958670876099
-Animation:
+--- !u!95 &5078363060129613215
+Animator:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727264949457438046}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: dcacfbb2bacaf734c9c0fe646296f086, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: dcacfbb2bacaf734c9c0fe646296f086, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f008f873ec80f0478aae5ba6eb87d1d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2102466345981376082
 GameObject:
   m_ObjectHideFlags: 0

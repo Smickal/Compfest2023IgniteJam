@@ -53,28 +53,33 @@ public class Movement : MonoBehaviour
     public void SetMoveTowardDestination(Vector3 pos)
     {
         moveTowardPos = pos;
+        transform.position = moveTowardPos;
         isMoveTowardsActivated = true;
     }
 
     private void MoveTowardsAnObj()
     {
-        Vector3 dir = moveTowardPos - transform.position;
-        dir.y = 0f;
-        dir.Normalize();
+        //Vector3 dir = moveTowardPos - transform.position;
+        //dir.y = 0f;
+        //dir.Normalize();
 
-        _characterController.SimpleMove(dir * _velocity * 2 * Time.deltaTime);
+        //_characterController.SimpleMove(dir * _velocity * 2 * Time.deltaTime);
 
 
-        Vector3 curPos = transform.position;
-        curPos.y = 0f;
+        //Vector3 curPos = transform.position;
+        //curPos.y = 0f;
 
-        Vector3 destPos = moveTowardPos;
-        destPos.y = 0f;
+        //Vector3 destPos = moveTowardPos;
+        //destPos.y = 0f;
 
-        if(Vector3.Distance(curPos, destPos) <= 0.2f)
-        {
-            isMoveTowardsActivated = false;
-        }
+        //if(Vector3.Distance(curPos, destPos) <= 0.2f)
+        //{
+        //    isMoveTowardsActivated = false;
+        //}
+
+        transform.position = moveTowardPos;
+        isMoveTowardsActivated = false;
+
     }
 
     private void CalculateMovementAndRotationFromInput()
