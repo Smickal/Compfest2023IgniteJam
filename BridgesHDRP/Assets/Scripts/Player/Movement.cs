@@ -27,7 +27,7 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
-        if(isMoveTowardsActivated)
+        if (isMoveTowardsActivated)
         {
             MoveTowardsAnObj();
         }
@@ -37,7 +37,7 @@ public class Movement : MonoBehaviour
         }
 
 
-        if(isFacingTarget && objToFaced != null)
+        if (isFacingTarget && objToFaced != null)
         {
             Vector3 direction = objToFaced.position - transform.position;
             direction.Normalize();
@@ -46,7 +46,19 @@ public class Movement : MonoBehaviour
         }
 
         if (!IsActivated) return;
+
         CalculateMovementAndRotationFromInput();
+
+    }
+
+    private void FixedUpdate()
+    {
+        
+    }
+
+    private void LateUpdate()
+    {
+        
     }
 
 

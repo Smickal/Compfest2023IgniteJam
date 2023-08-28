@@ -10,7 +10,7 @@ public class FollowPlayer : MonoBehaviour
     [SerializeField] Rigidbody _rigidBody;
 
 
-    private void Update()
+    private void LateUpdate()
     {
         float distanceToPlayer = Vector3.Distance(_followSpot.position, transform.position);
         Vector3 direction = _followSpot.position - transform.position;
@@ -24,5 +24,4 @@ public class FollowPlayer : MonoBehaviour
             transform.Translate(direction * _followSpeed * Time.deltaTime);
         }
     }
-
 }
