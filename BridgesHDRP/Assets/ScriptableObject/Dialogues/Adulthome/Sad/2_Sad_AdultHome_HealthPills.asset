@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 2_Sad_AdultHome_HealthPills
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: "It all began with a diagnosis, a word that carried weight beyond its letters\u2014a
+      word that changed the course of my life."
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -2.285031, y: 0.6686538, z: -0.2115169}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: These pills were supposed to be my lifeline, my way back to shore, but
+      now they feel like anchors weighing me down.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -2.285031, y: 0.6686538, z: -0.4230338}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: 'I remember the first time I held one of these little capsules in my hand. '
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -2.285031, y: 0.6686538, z: -0.2115169}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: The doctor's assurances echoed in my mind, promising relief from the pain
+      that had become a relentless companion.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -2.285031, y: 0.6686538, z: -0.2115169}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: But they didn't tell me about the trade-offs.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -2.285031, y: 0.6686538, z: -0.2115169}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: The hollowness that replaced my genuine laughter.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -2.285031, y: 0.6686538, z: -0.2115169}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: I became a spectator in my own life, watching the days go by without really
+      living them.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -2.285031, y: 0.6686538, z: -0.2115169}
+    CameraRotation: {x: 0, y: 0, z: 0}

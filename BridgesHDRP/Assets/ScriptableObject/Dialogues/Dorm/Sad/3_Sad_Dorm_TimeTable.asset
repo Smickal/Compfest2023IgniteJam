@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 3_Sad_Dorm_TimeTable
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: It's funny how those days in university, the ones etched with deadlines
+      and despair, manage to linger in the most unwelcome corners of my mind.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: -1.105156, y: 2.245737, z: -1.127545}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: It's like I'm transported back to that cramped dorm room, the walls adorned
+      with hastily pinned-up schedules, a battlefield of colored sticky notes that
+      never seemed to agree with one another.v
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: -1.105156, y: 2.245737, z: -2.25509}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: Days that felt like a constant shuffle between stacks of textbooks, endless
+      PowerPoint slides, and a timetable that seemed to have a personal vendetta
+      against my sanity.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: -1.105145, y: 2.245753, z: -1.127545}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: Those deadlines, each one like a countdown to an explosion of stress, waiting
+      to engulf me in its fiery embrace.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: -1.105156, y: 2.245753, z: -1.127545}
+    CameraRotation: {x: 0, y: 0, z: 0}

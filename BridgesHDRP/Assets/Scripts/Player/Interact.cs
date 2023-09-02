@@ -19,6 +19,9 @@ public class Interact : MonoBehaviour
 
     Collider closestCollider;
 
+
+    bool needSearch = true;
+
     private void Start()
     {
         _inputReader.OnInteractPressed += CheckInteract;
@@ -26,28 +29,39 @@ public class Interact : MonoBehaviour
 
     private void Update()
     {
-        _checkedColliders = Physics.OverlapSphere(transform.position, _interactCheckRadius, _inspectItemLayerMask);
+        if(needSearch == true)
+        {
+            _checkedColliders = Physics.OverlapSphere(transform.position, _interactCheckRadius, _inspectItemLayerMask);
 
-        closestCollider = SearchForClosestItem();
-        item = null;
-        if (closestCollider == null) return;
-        item = closestCollider.GetComponent<InteractedItem>();
+            closestCollider = SearchForClosestItem();
+            item = null;
+            if (closestCollider == null) return;
+            item = closestCollider.GetComponent<InteractedItem>();
 
-        item.ActivateOutline();
+            if (item.IsInteracted == true) return;
+            item.ActivateOutline();
+        }
     }
 
 
 
     private void CheckInteract()
     {
-        if (item == null) return;
 
+        if (item == null) return;
+        _checkedColliders = Physics.OverlapSphere(transform.position, _interactCheckRadius, _inspectItemLayerMask);
+
+        InteractedItem tempItem = SearchForClosestItem().GetComponent<InteractedItem>();
+
+        if (tempItem != item) return;
 
         //Trigger Isi Itemnya
         item.TriggerInteract();
 
         if (item.IsThisADialogueinteract() == false || item.IsInteracted == true) return;
+        needSearch = false;
         StartCoroutine(StartDialogue());
+        
     }
 
 
@@ -57,20 +71,23 @@ public class Interact : MonoBehaviour
         _blinkAndFadeManager.TriggerFadeToBlack();
 
         Vector3 movTowardsPos = item.ConversationTransform.position;
-
         yield return new WaitForSeconds(0.4f);
 
         _movement.SetMoveTowardDestination(movTowardsPos);
 
-        _cameraHandler.TriggerInteractCamera(item.transform);
+        
         //Disable Movement and Face Target
         _movement.DisableMovement();
         _movement.FaceTarget(item.transform);
 
-        yield return new WaitForSeconds(0.9f);
+        _dialogueTrigger.RegisterDialogues(item);
+        yield return new WaitForSeconds(0.3f);
 
+        _cameraHandler.TriggerInteractCamera(item.transform);
+        yield return new WaitForSeconds(0.6f);
+
+        _dialogueTrigger.DisplayDialogues();
         //TriggerDialogue
-        _dialogueTrigger.RegisterDialogues(item.DialogueData);
         item.Interacted();
     }
 
@@ -107,4 +124,8 @@ public class Interact : MonoBehaviour
         return closestItem;
     }
 
+    public void ActivateSearch()
+    {
+        needSearch = true;
+    }
 }

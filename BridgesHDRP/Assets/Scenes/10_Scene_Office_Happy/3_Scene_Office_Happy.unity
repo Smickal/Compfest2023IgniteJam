@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.045931112, g: 0.14247796, b: 0.1549063, a: 1}
+  m_IndirectSpecularColor: {r: 0.0459018, g: 0.14244573, b: 0.1548852, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2796,17 +2796,17 @@ PrefabInstance:
     - target: {fileID: 5745316920827819043, guid: d6374850f929d2742ba1fafd61cafbe9,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.38164333
+      value: 0.38164335
       objectReference: {fileID: 0}
     - target: {fileID: 5745316920827819043, guid: d6374850f929d2742ba1fafd61cafbe9,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000024960787
+      value: -0.000000012212521
       objectReference: {fileID: 0}
     - target: {fileID: 5745316920827819043, guid: d6374850f929d2742ba1fafd61cafbe9,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000010306198
+      value: 0.0000000050424935
       objectReference: {fileID: 0}
     - target: {fileID: 5770129800921254607, guid: d6374850f929d2742ba1fafd61cafbe9,
         type: 3}
@@ -2821,17 +2821,17 @@ PrefabInstance:
     - target: {fileID: 6817468698196362342, guid: d6374850f929d2742ba1fafd61cafbe9,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.39834887
+      value: 0.39834884
       objectReference: {fileID: 0}
     - target: {fileID: 6817468698196362342, guid: d6374850f929d2742ba1fafd61cafbe9,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 3.6467444e-16
+      value: -0.000000011322815
       objectReference: {fileID: 0}
     - target: {fileID: 6817468698196362342, guid: d6374850f929d2742ba1fafd61cafbe9,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -2.5318664e-16
+      value: 0.0000000049174242
       objectReference: {fileID: 0}
     - target: {fileID: 9080973599225588991, guid: d6374850f929d2742ba1fafd61cafbe9,
         type: 3}
@@ -3806,7 +3806,8 @@ MonoBehaviour:
   _dialogueData: {fileID: 0}
   _conversationTransform: {fileID: 0}
   _interactManager: {fileID: 0}
-  _outlineSystem: {fileID: 1775308864}
+  _outlineSystem:
+  - {fileID: 0}
   ActivatedOutline: 1
   isThisKeyItem: 0
   isThisADialogue: 0
@@ -32006,7 +32007,8 @@ MonoBehaviour:
   _dialogueData: {fileID: 11400000, guid: f93cf7b5a8fe5c84681341e9ed836f73, type: 2}
   _conversationTransform: {fileID: 343063983}
   _interactManager: {fileID: 1351606383}
-  _outlineSystem: {fileID: 6337449063871474902}
+  _outlineSystem:
+  - {fileID: 6337449063871474902}
   ActivatedOutline: 1
   isThisKeyItem: 1
   isThisADialogue: 1
@@ -37631,7 +37633,8 @@ MonoBehaviour:
   _dialogueData: {fileID: 11400000, guid: b0ca70d567f8845449222a5510813fcc, type: 2}
   _conversationTransform: {fileID: 2032749922}
   _interactManager: {fileID: 1351606383}
-  _outlineSystem: {fileID: 7691321355155312680}
+  _outlineSystem:
+  - {fileID: 7691321355155312680}
   ActivatedOutline: 1
   isThisKeyItem: 1
   isThisADialogue: 1
@@ -40821,7 +40824,8 @@ MonoBehaviour:
   _dialogueData: {fileID: 11400000, guid: d1df9f6f370ae734db51c325c6c32579, type: 2}
   _conversationTransform: {fileID: 882109671}
   _interactManager: {fileID: 1351606383}
-  _outlineSystem: {fileID: 8345778283182993526}
+  _outlineSystem:
+  - {fileID: 8345778283182993526}
   ActivatedOutline: 1
   isThisKeyItem: 1
   isThisADialogue: 1
@@ -43734,7 +43738,8 @@ MonoBehaviour:
   _dialogueData: {fileID: 11400000, guid: 9afd7094257f8a44b8eca22c3582dbe6, type: 2}
   _conversationTransform: {fileID: 347721876}
   _interactManager: {fileID: 1351606383}
-  _outlineSystem: {fileID: 9065509623320867194}
+  _outlineSystem:
+  - {fileID: 9065509623320867194}
   ActivatedOutline: 1
   isThisKeyItem: 1
   isThisADialogue: 1

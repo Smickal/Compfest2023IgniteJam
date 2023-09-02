@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 2_Sad_Dorm_PhotoTrashCan
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: "This photograph\u2026\u2026a fragment of a time when things were simpler,
+      when we were happier."
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.035972, y: 2.35211, z: 0.5985901}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: Her smile, captured in this little piece of glossy paper, used to light
+      up my world.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.035972, y: 2.35211, z: 0.5985901}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: We were inseparable back then, like two puzzle pieces that fit perfectly
+      together.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.035972, y: 2.35211, z: 0.5985901}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: But somewhere along the way, we started to drift.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.035972, y: 2.35211, z: 0.5985901}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: The cracks began to show, and we struggled to mend them.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.035972, y: 2.35211, z: 0.5985901}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: Until one day, we looked at each other and realized that maybe we weren't
+      those perfect pieces anymore.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.035972, y: 2.35211, z: 0.5985901}
+    CameraRotation: {x: 0, y: 0, z: 0}

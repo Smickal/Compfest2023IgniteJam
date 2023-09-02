@@ -167,11 +167,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1727264949457438046, guid: 53b3ecb6c2266e54393104de8ebd1f78,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2281689540342490457, guid: 53b3ecb6c2266e54393104de8ebd1f78,
         type: 3}
       propertyPath: m_Name
@@ -768,10 +763,11 @@ MonoBehaviour:
   _playerLayerMask:
     serializedVersion: 2
     m_Bits: 8
-  _dialogueData: {fileID: 11400000, guid: 4ff69308ad97e7a45b7b2bbfd992b7fd, type: 2}
+  _dialogueData: {fileID: 11400000, guid: ae4956111fe2d6842b07a51a2b9fa683, type: 2}
   _conversationTransform: {fileID: 424721363}
   _interactManager: {fileID: 0}
-  _outlineSystem: {fileID: 386099164}
+  _outlineSystem:
+  - {fileID: 386099164}
   ActivatedOutline: 1
   isThisKeyItem: 0
   isThisADialogue: 1
@@ -1334,7 +1330,8 @@ MonoBehaviour:
   _dialogueData: {fileID: 11400000, guid: 4ff69308ad97e7a45b7b2bbfd992b7fd, type: 2}
   _conversationTransform: {fileID: 2016715421}
   _interactManager: {fileID: 0}
-  _outlineSystem: {fileID: 712972845}
+  _outlineSystem:
+  - {fileID: 712972845}
   ActivatedOutline: 1
   isThisKeyItem: 0
   isThisADialogue: 1
@@ -2449,6 +2446,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2124705421725058983, guid: 59ca7bfba6cd9c9478853d79d9ac7191, type: 3}
+--- !u!114 &1321360631 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1220548513468888088, guid: b239376584024ad4492d17722380a98c,
+    type: 3}
+  m_PrefabInstance: {fileID: 977317896}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aaf4f5e48b5e014ca435a614304fbde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1326003508 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 909340752189415867, guid: 59ca7bfba6cd9c9478853d79d9ac7191,
@@ -2784,7 +2793,8 @@ MonoBehaviour:
   _dialogueData: {fileID: 0}
   _conversationTransform: {fileID: 0}
   _interactManager: {fileID: 0}
-  _outlineSystem: {fileID: 0}
+  _outlineSystem:
+  - {fileID: 0}
   ActivatedOutline: 1
   isThisKeyItem: 0
   isThisADialogue: 1
@@ -3527,6 +3537,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 583970824251134640, guid: d6374850f929d2742ba1fafd61cafbe9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.32446837
+      objectReference: {fileID: 0}
+    - target: {fileID: 583970824251134640, guid: d6374850f929d2742ba1fafd61cafbe9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000000016189588
+      objectReference: {fileID: 0}
+    - target: {fileID: 583970824251134640, guid: d6374850f929d2742ba1fafd61cafbe9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000055534715
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694767421666723760, guid: d6374850f929d2742ba1fafd61cafbe9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9458966
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694767421666723760, guid: d6374850f929d2742ba1fafd61cafbe9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.32446834
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694767421666723760, guid: d6374850f929d2742ba1fafd61cafbe9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000000016189587
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694767421666723760, guid: d6374850f929d2742ba1fafd61cafbe9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000055534684
+      objectReference: {fileID: 0}
     - target: {fileID: 2434711357080482860, guid: d6374850f929d2742ba1fafd61cafbe9,
         type: 3}
       propertyPath: m_Name
@@ -3537,6 +3582,11 @@ PrefabInstance:
       propertyPath: _chatDialogueDisplay
       value: 
       objectReference: {fileID: 821759930}
+    - target: {fileID: 4936885052739016270, guid: d6374850f929d2742ba1fafd61cafbe9,
+        type: 3}
+      propertyPath: m_XAxis.m_MaxSpeed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5745316920827819043, guid: d6374850f929d2742ba1fafd61cafbe9,
         type: 3}
       propertyPath: m_LocalRotation.y
@@ -3547,15 +3597,20 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.0000000065666983
       objectReference: {fileID: 0}
+    - target: {fileID: 5770129800921254607, guid: d6374850f929d2742ba1fafd61cafbe9,
+        type: 3}
+      propertyPath: _blinkAndFadeManager
+      value: 
+      objectReference: {fileID: 1321360631}
     - target: {fileID: 6817468698196362342, guid: d6374850f929d2742ba1fafd61cafbe9,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000015782275
+      value: 0.000000015782279
       objectReference: {fileID: 0}
     - target: {fileID: 6817468698196362342, guid: d6374850f929d2742ba1fafd61cafbe9,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00000000685414
+      value: -0.000000006854142
       objectReference: {fileID: 0}
     - target: {fileID: 9080973599225588991, guid: d6374850f929d2742ba1fafd61cafbe9,
         type: 3}

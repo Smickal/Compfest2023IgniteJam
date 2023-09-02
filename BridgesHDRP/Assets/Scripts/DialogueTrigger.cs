@@ -12,10 +12,14 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] ChatDialogueDisplay _chatDialogueDisplay;
     [SerializeField] Movement _movement;
     [SerializeField] CameraHandler _cameraHandler;
+    [SerializeField] InteractManager _interactManager;
 
     List<DialogueChat> chatList = new List<DialogueChat>();
 
     bool isCutsceneSentence = false;
+
+    InteractedItem item;
+    
 
     private void Start()
     {
@@ -23,9 +27,12 @@ public class DialogueTrigger : MonoBehaviour
         _chatDialogueDisplay.OnSentenceDone += RemoveSentenceInZeroIndex;
     }
 
-    public void RegisterDialogues(Dialogue dialogue)
+    public void RegisterDialogues(InteractedItem item)
     {
-        if (dialogue == null) return;
+        if (item.DialogueData == null) return;
+        this.item = item;
+        Dialogue dialogue = item.DialogueData;
+
         chatList.Clear();
         _movement.DisableMovement();
 
@@ -35,7 +42,15 @@ public class DialogueTrigger : MonoBehaviour
         }
 
         isCutsceneSentence = false;
-        DisplayDialogues();
+
+        if (chatList[0].IsCameraSpecial)
+        {
+            _cameraHandler.MoveInpectCameraToCustomLoc(chatList[0].CameraPos, chatList[0].CameraRotation);
+        }
+        else
+        {
+            _cameraHandler.ResetInspectCameraPosition();
+        }
     }
 
     public void RegisterCutsceneDialogues(Dialogue dialogue)
@@ -72,7 +87,7 @@ public class DialogueTrigger : MonoBehaviour
             }
             else
             {
-                _chatDialogueDisplay.DisplayCutsceneString(chatList[0].Text);
+                _chatDialogueDisplay.DisplayCutsceneString(chatList[0].Text, chatList[0].TextColor);
             }
 
 
@@ -99,6 +114,16 @@ public class DialogueTrigger : MonoBehaviour
             _movement.ActivateMovement();
             _movement.StopFacingTarget();
             _cameraHandler.TriggerNormalFreeLookCamera();
+
+            _interact.ActivateSearch();
+
+
+            if (item == null) return;
+            if(item.IsThisKeyItem)
+            {
+                _interactManager.IncreaseInteractCount();
+                item = null;
+            }
         }
     }
 

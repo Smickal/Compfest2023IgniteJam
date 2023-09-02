@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 1_Sad_AdultHome_Tax&Bills
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: I vividly remember that day when my mailbox seemed to conspire against
+      my peaceful existence, delivering tax and debt bills as if they were long-lost
+      friends.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.115488, y: 1.403524, z: 0.7163701}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: I was the reluctant subject trying to make sense of it all.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.115488, y: 1.403524, z: 0.7163701}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: I remember holding those bills in my hands, the weight of reality sinking
+      in.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.115488, y: 1.403524, z: 0.7163701}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: They were like messages from the financial universe, reminding me that
+      this complex web of obligations demanded attention.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.115488, y: 1.403524, z: 0.7163701}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: I used to think of adulthood as this grand adventure, a world where freedom
+      and independence reign supreme.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.115488, y: 1.403524, z: 0.7163701}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: But those bills were like a wake-up call that adulthood was also about
+      responsibility and accountability
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.115488, y: 1.403524, z: 0.7163701}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: 'In that moment, as I sat at this very spot, I found myself flipping through
+      the pages, '
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.115488, y: 1.403524, z: 0.7163701}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: each line of numbers a reminder of choices made, of transactions completed,
+      and of the intricate dance between income and expenditure.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.115488, y: 1.403524, z: 0.7163701}
+    CameraRotation: {x: 0, y: 0, z: 0}

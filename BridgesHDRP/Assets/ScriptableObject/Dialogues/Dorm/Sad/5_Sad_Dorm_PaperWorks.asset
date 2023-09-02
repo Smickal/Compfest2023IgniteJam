@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 5_Sad_Dorm_PaperWorks
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: Each sheet of paper was a reminder of responsibilities that piled up like
+      a never-ending staircase.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.105156, y: 2.245737, z: -1.127545}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: "Essays, assignments, forms \u2013 they all converged in a heap, and each
+      piece of paper made me drown in a sea of expectations and deadlines."
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.105156, y: 2.245737, z: -1.127545}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: I remember nights when my desk lamp burned late into the darkness, the
+      only source of light in a room filled with shadows.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.105156, y: 2.245737, z: -1.127545}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: The soft rustling of papers became a symphony of stress, a melody that
+      played on repeat as I struggled to make sense of my own disarray.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.105156, y: 2.245737, z: -1.127545}
+    CameraRotation: {x: 0, y: 0, z: 0}

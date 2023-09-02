@@ -9,6 +9,7 @@ public class InteractManager: MonoBehaviour
 
     [SerializeField] PercentageManager percentageManager;
     [SerializeField] InteractedItem[] interactedItems;
+    [SerializeField] TriggerTransitionCutscene _cutscene;
     int interactedCount = 0;
 
 
@@ -34,7 +35,12 @@ public class InteractManager: MonoBehaviour
         if(interactedCount >= interactedItems.Length)
         {
             allItemIsInteracted = true;
+
+            if (_cutscene == null) return;
+            _cutscene.TriggerTransition();
         }
+
+
     }
 
 }

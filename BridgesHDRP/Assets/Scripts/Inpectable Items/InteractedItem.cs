@@ -19,7 +19,7 @@ public class InteractedItem : MonoBehaviour, IInteractable
 
     [Space(10)]
     [Header("Outline")]
-    [SerializeField] OutlineObject _outlineSystem;
+    [SerializeField] OutlineObject[] _outlineSystem;
 
     [Space(10)]
     [SerializeField] bool ActivatedOutline = true;
@@ -39,6 +39,7 @@ public class InteractedItem : MonoBehaviour, IInteractable
     public Transform ConversationTransform { get { return _conversationTransform; } }
     public bool IsInteracted { get { return isInteracted; } }
     public List<TriggerActivateGameObject> TriggerActivateGameObjects { get { return _allTriggerItem; } }
+    public bool IsThisKeyItem { get { return isThisKeyItem; } }
 
     private void Update()
     {
@@ -67,9 +68,6 @@ public class InteractedItem : MonoBehaviour, IInteractable
     public void TriggerInteract()
     {
         OnTriggerAction?.Invoke();
-        
-        if (isThisKeyItem)
-            _interactManager.IncreaseInteractCount();
     }
 
 
@@ -77,7 +75,11 @@ public class InteractedItem : MonoBehaviour, IInteractable
     {
         if (IsTriggered) return;
 
-        _outlineSystem.enabled = true;
+        foreach(var outline in _outlineSystem)
+        {
+            outline.enabled = true;
+        }
+
         IsTriggered = true;
         //Debug.Log("activate outline + " + gameObject.name);
     }
@@ -86,7 +88,11 @@ public class InteractedItem : MonoBehaviour, IInteractable
     {
         if(!IsTriggered) return;
 
-        _outlineSystem.enabled = false;
+        foreach(var outine in _outlineSystem)
+        {
+            outine.enabled = false;
+        }
+
         IsTriggered = false;
         //Debug.Log("OFf outline + " + gameObject.name);
     }
@@ -99,6 +105,12 @@ public class InteractedItem : MonoBehaviour, IInteractable
     public void Interacted()
     {
         isInteracted = true;
+    }
+
+    public void IncreaseTrigger()
+    {
+        if (isThisKeyItem)
+            _interactManager.IncreaseInteractCount();
     }
 
 }

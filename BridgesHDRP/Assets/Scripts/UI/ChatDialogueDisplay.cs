@@ -52,13 +52,13 @@ public class ChatDialogueDisplay : MonoBehaviour
     }
 
 
-    public void DisplayCutsceneString(string text)
+    public void DisplayCutsceneString(string text, Color color)
     {
         _dropdownOBJ?.SetActive(false);
         _button.enabled = false;    
 
         _chatGO.SetActive(true);
-        _tmpText.color = Color.white;
+        _tmpText.color = color;
 
 
         StartCoroutine(PlayString(text));
