@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 1_Sad_School_BackPaclk
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: This backpack, it's more than just a bag.
+    TriggerSomethingHere: 1
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: It's a time capsule of my school days, of a time when the hallways echoed
+      with laughter and whispered insecurities.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: I remember the days when those hallways were more like battlegrounds.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: Bullies prowled like shadows, lurking around corners to pounce on their
+      next victim.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: One day, as I walked past the row of lockers, they struck.One day, as I
+      walked past the row of lockers, they struck.
+    TriggerSomethingHere: 1
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: A sudden push, a force that sent me crashing into those unforgiving metal
+      doors.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: I fell, my dignity scattered on the floor, as laughter erupted around me
+      like a chorus of mocking voices.I fell, my dignity scattered on the floor,
+      as laughter erupted around me like a chorus of mocking voices.
+    TriggerSomethingHere: 1
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: That echo of that laughter lingers far longer than the physical pain.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}

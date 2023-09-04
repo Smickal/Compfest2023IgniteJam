@@ -22,5 +22,4 @@ public class DialogueChat
     [field: Header("Camera")]
     public bool IsCameraSpecial = false;
     public Vector3 CameraPos;
-    public Vector3 CameraRotation;
 }

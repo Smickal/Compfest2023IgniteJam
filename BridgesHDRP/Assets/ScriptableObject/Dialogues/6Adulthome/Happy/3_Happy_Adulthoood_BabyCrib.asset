@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 3_Happy_Adulthoood_BabyCrib
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: This crib has seen our family nestled within its protective embrace.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: 'It''s more than just a piece of furniture. it''s a vessel of dreams, comfort,
+      and love. '
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: It's a tangible connection to our family's history, a reminder of the precious
+      gift of new life that has graced our home.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: I recall the countless nights when I stood by this crib, softly cradling
+      a little one in my arms, singing lullabies to soothe them to sleep.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: "This crib witnessed the milestones of our children \u2013 their first
+      smiles, the first time they rolled over, and those tentative first steps that
+      marked the beginning of their journey into the world."
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}

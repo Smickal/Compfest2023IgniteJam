@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 4_Happy_Child_Television
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: Ah, those family TV nights.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -2.765203, y: 0.8178136, z: -0.2583508}
+  - Text: They were a cherished tradition in our home, a time when the world outside
+      ceased to exist, and all that mattered was the glow of the screen and the warmth
+      of our togetherness.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -2.765203, y: 0.8178136, z: -0.2583508}
+  - Text: Every Saturday night, like clockwork, we'd gather in the living room.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -2.765203, y: 0.8178136, z: -0.2583508}
+  - Text: There was a sense of anticipation in the air, as if we were embarking on
+      a new adventure each time.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -2.765203, y: 0.8178136, z: -0.2583508}
+  - Text: As the screen flickered to life, the room would fall into a cozy silence,
+      broken only by the occasional gasp or burst of laughter.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -2.765203, y: 0.8178136, z: -0.2583508}
+  - Text: They were about the shared experience, the collective laughter or tears,
+      the inside jokes that emerged from repeated viewings.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -2.765203, y: 0.8178136, z: -0.2583508}
+  - Text: As I look back on those family TV nights, I realize how they were more
+      than just a weekly tradition.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -2.765203, y: 0.8178136, z: -0.2583508}

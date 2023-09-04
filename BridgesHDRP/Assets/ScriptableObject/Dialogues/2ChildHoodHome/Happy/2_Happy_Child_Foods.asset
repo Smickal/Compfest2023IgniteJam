@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 2_Happy_Child_Foods
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: Ah, family meals.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: The very thought of them brings back a flood of memories, a rich and savory
+      stew of moments.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: Every night, we would gather around the dining table with my mother, father,
+      siblings, and me.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: The aroma of whatever my mother had been cooking would greet us at the
+      door, like a warm embrace from home itself.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: There was a particular joy in the simple act of setting the table.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: My younger sibling would often bicker about who got to sit where, and in
+      the midst of it all, I would quietly savor the anticipation of the feast to
+      come.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}

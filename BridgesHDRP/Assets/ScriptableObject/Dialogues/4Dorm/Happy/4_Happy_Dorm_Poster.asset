@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 4_Happy_Dorm_Poster
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: The prospect of attending a gaming convention or a concert together was
+      too enticing to resist.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: So, we made it happen, pooling our resources, clearing our schedules, and
+      counting down the days with anticipation.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: The excitement leading up to the event was electrifying.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: We planned our outfits, discussed which games we wanted to play or which
+      artists we were most eager to see perform.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: It wasn't just about the event itself. it was the thrill of going on this
+      adventure with my closest friends that made it all the more exhilarating.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}

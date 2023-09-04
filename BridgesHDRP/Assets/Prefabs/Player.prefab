@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763179415313264408}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000001982, y: -0.94589657, z: 0.3244683, w: -0.000000005777966}
+  m_LocalRotation: {x: 0.32446837, y: 0.000000044250914, z: -0.000000015179273, w: 0.94589657}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -111,7 +111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170356748487116824}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000000685414, y: -0.917234, z: 0.39834884, w: -0.000000015782275}
+  m_LocalRotation: {x: 0.3983489, y: 3e-45, z: -1e-45, w: 0.917234}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -338,6 +338,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1790675979707376663}
   - {fileID: 2653138992305021919}
   - {fileID: 189831040978060026}
   - {fileID: 6968276967170819038}
@@ -345,6 +346,7 @@ Transform:
   - {fileID: 8924124751442523425}
   - {fileID: 2062782601094507282}
   - {fileID: 2720440450431810359}
+  - {fileID: 2586127845428450788}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7205370503210035212
@@ -383,7 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ade9c042ba3c90e4cb6c45cd63629c71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _velocity: 250
+  _velocity: 180
   _characterController: {fileID: 7729792779649803937}
   _rigidbody: {fileID: 3734697212187503865}
   _inputReader: {fileID: 7205370503210035212}
@@ -408,6 +410,10 @@ MonoBehaviour:
   _movement: {fileID: 8505828555090087933}
   _dialogueTrigger: {fileID: 3448698126320816226}
   _blinkAndFadeManager: {fileID: 0}
+  _rayOrigin: {fileID: 2586127845428450788}
+  _rayLayerMask:
+    serializedVersion: 2
+    m_Bits: 1088
 --- !u!114 &4263192587798753431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,8 +495,8 @@ CharacterController:
   serializedVersion: 3
   m_Height: 1.5
   m_Radius: 0.36
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_SlopeLimit: 20
+  m_StepOffset: 0.1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -512,9 +518,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 02b00e7d267029c44bc796b894f85927, type: 2}
     - {fileID: 11400000, guid: fd4e8879cc2d4b943a53b5c982da6999, type: 2}
     - {fileID: 11400000, guid: ace0cc8ce9967bd4889543fa257c9be6, type: 2}
-    - {fileID: 11400000, guid: fa5fc7ee4519a9241a3e19d0fba46244, type: 2}
-    - {fileID: 11400000, guid: fcc95e7155621ec4b9e57793ec472b14, type: 2}
-    - {fileID: 11400000, guid: f3d463f3915b0d24baa5946a66139d9d, type: 2}
+    - {fileID: 11400000, guid: 34ff08fcf6320c84d9a1dce16a1d9896, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -580,37 +584,7 @@ MonoBehaviour:
           m_MethodName: RegisterCutsceneDialogues
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: a92f44c9eee488646a1b20849f02e2e6,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: Dialogue, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 3448698126320816226}
-          m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-          m_MethodName: RegisterCutsceneDialogues
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 29a06cae5f7f2614a8fa365f24d232c3,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: Dialogue, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 3448698126320816226}
-          m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-          m_MethodName: RegisterCutsceneDialogues
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: c3b497b533c10604a91783f660365c2c,
+            m_ObjectArgument: {fileID: 11400000, guid: e4c36433f62c31845ab6086d34bcbf14,
               type: 2}
             m_ObjectArgumentAssemblyTypeName: Dialogue, Assembly-CSharp
             m_IntArgument: 0
@@ -664,8 +638,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2561069034666139960}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.10077182, y: -0.727866, z: 0.10957919, w: 0.6693643}
-  m_LocalPosition: {x: 2.1463156, y: 0.89000213, z: 0.18004704}
+  m_LocalRotation: {x: 0.10169158, y: -0.7279363, z: 0.1106549, w: 0.66897166}
+  m_LocalPosition: {x: 2.1289153, y: 0.89000213, z: 0.18004704}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -718,6 +692,37 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 4949477581675609641}
+--- !u!1 &2912470545918347717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790675979707376663}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1790675979707376663
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2912470545918347717}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.89, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9080973599225588991}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3357182086485348114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,7 +1018,7 @@ Transform:
   m_GameObject: {fileID: 4452477329892306773}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.6, z: 4.81}
+  m_LocalPosition: {x: 0, y: 4.6, z: -4.8099995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1375,7 +1380,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5830330199954348309}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0000000065666983, y: -0.9243097, z: 0.38164333, w: 0.000000015904021}
+  m_LocalRotation: {x: 0.38164333, y: -0.000000024960789, z: 0.000000010306197, w: 0.9243097}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1436,6 +1441,37 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 739427404051417018}
+--- !u!1 &6427977272434102178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2586127845428450788}
+  m_Layer: 3
+  m_Name: RayOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2586127845428450788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6427977272434102178}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.574, z: 0.269}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9080973599225588991}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8181589076495550048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1448,6 +1484,7 @@ GameObject:
   - component: {fileID: 4989140149634906761}
   - component: {fileID: 5360510416751888597}
   - component: {fileID: 4900103432620371010}
+  - component: {fileID: 7072058874376281898}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1463,8 +1500,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8181589076495550048}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0000000098709405, y: -0.94589657, z: 0.3244683, w: -0.000000028775965}
-  m_LocalPosition: {x: 0, y: 4.6, z: 4.81}
+  m_LocalRotation: {x: 0.32446837, y: 0.00000005246728, z: -0.000000017997712, w: 0.94589657}
+  m_LocalPosition: {x: 0, y: 4.6, z: -4.8099995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1684,6 +1721,14 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!81 &7072058874376281898
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8181589076495550048}
+  m_Enabled: 1
 --- !u!1 &8522830473267548236
 GameObject:
   m_ObjectHideFlags: 0

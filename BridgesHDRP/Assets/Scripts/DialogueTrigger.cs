@@ -17,7 +17,7 @@ public class DialogueTrigger : MonoBehaviour
     List<DialogueChat> chatList = new List<DialogueChat>();
 
     bool isCutsceneSentence = false;
-
+    bool isFirstTrigger = false;
     InteractedItem item;
     
 
@@ -45,7 +45,7 @@ public class DialogueTrigger : MonoBehaviour
 
         if (chatList[0].IsCameraSpecial)
         {
-            _cameraHandler.MoveInpectCameraToCustomLoc(chatList[0].CameraPos, chatList[0].CameraRotation);
+            _cameraHandler.MoveInpectCameraToCustomLoc(chatList[0].CameraPos);
         }
         else
         {
@@ -76,6 +76,10 @@ public class DialogueTrigger : MonoBehaviour
 
             if (!isCutsceneSentence)
             {
+                if (isFirstTrigger == true)
+                    FindObjectOfType<AudioManager>().PlaySound("ChatNext");
+
+                isFirstTrigger = true;
                 if(_chatDialogueDisplay.IsSentenceDone)
                 {
                     _chatDialogueDisplay.DisplayString(chatList[0].Text, chatList[0].TextColor);
@@ -94,7 +98,7 @@ public class DialogueTrigger : MonoBehaviour
 
             if (chatList[0].IsCameraSpecial)
             {
-                _cameraHandler.MoveInpectCameraToCustomLoc(chatList[0].CameraPos, chatList[0].CameraRotation);
+                _cameraHandler.MoveInpectCameraToCustomLoc(chatList[0].CameraPos);
             }
             else
             {
@@ -111,12 +115,15 @@ public class DialogueTrigger : MonoBehaviour
         {
             _chatDialogueDisplay.DisableChatDialogue();
 
-            _movement.ActivateMovement();
+           
             _movement.StopFacingTarget();
             _cameraHandler.TriggerNormalFreeLookCamera();
 
             _interact.ActivateSearch();
 
+            Invoke("EnableMovement", 1.9f);
+
+            isFirstTrigger = false;
 
             if (item == null) return;
             if(item.IsThisKeyItem)
@@ -127,7 +134,10 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
-
+    private void EnableMovement()
+    {
+        _movement.ActivateMovement();
+    }
     public void RemoveSentenceInZeroIndex()
     {
         if (chatList[0].TriggerSomethingHere) _interact.TriggerWhateverInsideItem();

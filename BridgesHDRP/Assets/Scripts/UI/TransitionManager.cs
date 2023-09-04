@@ -11,13 +11,13 @@ public class TransitionManager : MonoBehaviour
 
     int TriggerTransitionHash = Animator.StringToHash("TriggerTransition");
     int TriggerUnTransitionHash = Animator.StringToHash("TriggerUnTransition");
-
+    int TriggerEndingHash = Animator.StringToHash("TriggerEnding");
 
     [SerializeField] Animator _animator;
     [SerializeField] InteractManager _interactManager;
     [SerializeField] InstructionTextManager _instructionTextManager;
     [SerializeField] Door _door;
-
+    [SerializeField] AudioClip _teleport;
 
     [Space(5)] 
     [SerializeField] bool isActivatedAtBeginning = false;
@@ -47,14 +47,49 @@ public class TransitionManager : MonoBehaviour
         StartCoroutine(NextScene());
     }
 
+    public void ForceNextScene()
+    {
+        StartCoroutine(NextScene());
+    }
+
+    public void TriggerBackToMenu()
+    {
+        if (_interactManager.IsAllItemInteracted != true)
+        {
+            _instructionTextManager.TriggerInstructionText(ErrorText);
+            return;
+        }
+
+        if (_door != null)
+        {
+            _door.OpenDoor();
+        }
+        _animator.SetTrigger(TriggerEndingHash);
+        StartCoroutine(LoadMenu());
+    }
+
+
     public void TriggerOpening()
     {
         _animator.SetTrigger(TriggerUnTransitionHash);
+        FindObjectOfType<AudioManager>().PlaySound("Teleport");
     }
 
     IEnumerator NextScene()
     {
+        FindObjectOfType<AudioManager>().PlaySound("Teleport");
         yield return new WaitForSeconds(transitionTime);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    IEnumerator LoadMenu()
+    {
+        yield return new WaitForSeconds(5.13f);
+        SceneManager.LoadScene(0);
+    }
+
+    public void ExitApplication()
+    {
+        Application.Quit();
     }
 }

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: EndingDialogue
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: Welcome back, traveler. How is your journey ?
+    TriggerSomethingHere: 0
+    TextColor: {r: 0, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: It was... not what i expected
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: I've learned to forgive myself and let go of the weight that held me back.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: I realized that I've carried the burden of past regrets for far too long
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: 'That''s a powerful revelation, Traveler. Forgiveness is a key to your
+      inner peace. '
+    TriggerSomethingHere: 0
+    TextColor: {r: 0, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: Now it is time for you to move on.
+    TriggerSomethingHere: 0
+    TextColor: {r: 0, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: It has been quite interesting watching you grow as your journey proggresed
+    TriggerSomethingHere: 0
+    TextColor: {r: 0, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: Traveler, please walk through the door. Good bye.....
+    TriggerSomethingHere: 0
+    TextColor: {r: 0, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: Goodbye Maya.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}

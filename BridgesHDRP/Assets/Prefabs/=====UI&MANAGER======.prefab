@@ -50,7 +50,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
+  _cutscene: {fileID: 0}
 --- !u!1 &569933608696822435
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6671546021594839175}
   - component: {fileID: 5111659425337833270}
+  - component: {fileID: 6407199256069045567}
   m_Layer: 0
   m_Name: ChatDialogue_Manager
   m_TagString: Untagged
@@ -244,6 +245,36 @@ MonoBehaviour:
   _tmpText: {fileID: 6801572834180425102}
   _dropdownOBJ: {fileID: 7724552228338360542}
   _chatGO: {fileID: 9055621894212175370}
+--- !u!114 &6407199256069045567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3843150595831635829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 4eb5ec2580b544a4ea1b3efa16bb087e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5111659425337833270}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &5246091523982316908
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,7 +496,8 @@ MonoBehaviour:
   _interactManager: {fileID: 6551246484170215478}
   _instructionTextManager: {fileID: 4312532156176768775}
   _door: {fileID: 0}
-  isActivatedAtBeginning: 1
+  _teleport: {fileID: 8300000, guid: f0f0f0ecd18931746894f63005c59418, type: 3}
+  isActivatedAtBeginning: 0
 --- !u!1 &8589075105408843611
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,10 +538,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8059241293910601213}
     m_Modifications:
+    - target: {fileID: 368556789780289373, guid: 53b3ecb6c2266e54393104de8ebd1f78,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -75
+      objectReference: {fileID: 0}
+    - target: {fileID: 604597667162247792, guid: 53b3ecb6c2266e54393104de8ebd1f78,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -40
+      objectReference: {fileID: 0}
     - target: {fileID: 2281689540342490457, guid: 53b3ecb6c2266e54393104de8ebd1f78,
         type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 2599336144086027011, guid: 53b3ecb6c2266e54393104de8ebd1f78,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3610089552026456856, guid: 53b3ecb6c2266e54393104de8ebd1f78,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5061620447361209728, guid: 53b3ecb6c2266e54393104de8ebd1f78,
         type: 3}

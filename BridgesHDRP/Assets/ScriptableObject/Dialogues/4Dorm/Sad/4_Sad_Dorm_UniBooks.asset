@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 4_Sad_Dorm_UniBooks
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: They say that books hold the power to transport us to different worlds,
+      to offer solace in times of turmoil.
+    TriggerSomethingHere: 1
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: "But there are books on these shelves that hold not just stories, but the
+      echoes of a time I'd rather forget \u2013 my university days."
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: Its pages are a mirror, reflecting the moments when I was meant to be studying,
+      diving into the depths of knowledge.Its pages are a mirror, reflecting the
+      moments when I was meant to be studying, diving into the depths of knowledge.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: Yet, more often than not, I found myself trapped in the undertow of procrastination.Yet,
+      more often than not, I found myself trapped in the undertow of procrastination.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: I thought that university would be a realm of intellectual growth, a sanctuary
+      where I'd be surrounded by the wisdom of ages.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+  - Text: But what I found was a labyrinth of self-doubt, a maze where deadlines
+      lurked at every corner, ready to pounce when I least expected it.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}

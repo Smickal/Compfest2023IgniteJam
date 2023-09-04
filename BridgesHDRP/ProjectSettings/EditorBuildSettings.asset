@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main_Menu/Main_Menu.unity
+    guid: eaa7c48b43a4876458eadb4cb25fb9ea
+  - enabled: 1
     path: Assets/Scenes/1_Scene_Opening/Scene_Opening.unity
     guid: 46831d813343ac544bafd78c78e5f2e4
   - enabled: 1
@@ -24,9 +27,21 @@ EditorBuildSettings:
     path: Assets/Scenes/6_Scene_Child_Sad/6_Sad_ChildHood.unity
     guid: 0f56e08935e9327488798a0dd98b3a9e
   - enabled: 1
-    path: Assets/Scenes/10_Scene_Office_Happy/3_Scene_Office_Happy.unity
+    path: Assets/Scenes/7_Scene_Child_Happy/7_Scene_Chilf_Happy.unity
+    guid: 6a4562d606d586e4d8b4483dae9cc1ee
+  - enabled: 1
+    path: Assets/Scenes/8_Scene_School_Happy/8_Happy_School.unity
+    guid: f3f076f648a7a7943968bba56a7344de
+  - enabled: 1
+    path: Assets/Scenes/9_Scene_Dotrm_Happy/9_Dorm_Happy.unity
+    guid: f39fe32e40f8b5041a0232c8bdfb0134
+  - enabled: 1
+    path: Assets/Scenes/10_Scene_Office_Happy/10_Office_Happy.unity
     guid: b80c7facbd94f3943b9ed15e79e65317
   - enabled: 1
-    path: Assets/Scenes/SceneTesting/SceneTesting.unity
-    guid: 327591005d5595e418ac68142d2abbd5
+    path: Assets/Scenes/11_Scene_AdultHome_Happy/11_AdultHome_Happy.unity
+    guid: 50139ac2a0849bd4aac9c7030bba16e5
+  - enabled: 1
+    path: Assets/Scenes/12_Sceme_Ending/Scene_Closing.unity
+    guid: b96d690a68ee00147a9a18d3f31cd94c
   m_configObjects: {}

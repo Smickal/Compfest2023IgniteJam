@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 1_Sad_Dorm_Computer
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: College days... they were supposed to be some of the best days of my life,
+      right? A time of self-discovery, endless possibilities, and friendships that
+      would last forever.
+    TriggerSomethingHere: 1
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.766493, y: 1.937294, z: 1.101223}
+  - Text: But for me, it became a time overshadowed by the very thing that was supposed
+      to help me succeed.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.766493, y: 1.937294, z: 1.101223}
+  - Text: I remember the excitement I felt when I got that computer.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.766493, y: 1.937294, z: 1.101223}
+  - Text: Little did I know that it unlocked a flood of stress, anxiety, and this
+      feeling of never being good enough.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.766493, y: 1.937294, z: 1.101223}
+  - Text: It's funny how a cold, lifeless piece of metal and plastic could become
+      the epicenter of my struggles.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.766493, y: 1.937294, z: 1.101223}
+  - Text: Late nights turned into early mornings as I stared at that screen, trying
+      to meet deadlines that felt like they were closing in on me from every direction.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.766493, y: 1.937294, z: 1.101223}
+  - Text: The constant ping of notifications, the emails from professors, the pressure
+      to perform... it all felt suffocating.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: -1.766493, y: 1.937294, z: 1.101223}

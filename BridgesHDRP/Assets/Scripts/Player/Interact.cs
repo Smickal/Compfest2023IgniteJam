@@ -11,7 +11,13 @@ public class Interact : MonoBehaviour
     [SerializeField] private CameraHandler _cameraHandler;
     [SerializeField] private Movement _movement;
     [SerializeField] private DialogueTrigger _dialogueTrigger;
+
     [SerializeField] private BlinkAndFadeManager _blinkAndFadeManager;
+
+    [Space(6)]
+    [Header("RaycastProperties")]
+    [SerializeField] private Transform _rayOrigin;
+    [SerializeField] private LayerMask _rayLayerMask;
 
     Collider[] _checkedColliders;
     InteractedItem item;
@@ -20,7 +26,9 @@ public class Interact : MonoBehaviour
     Collider closestCollider;
 
 
+    bool isItemObstructed = false;
     bool needSearch = true;
+    bool interactPressed = false;
 
     private void Start()
     {
@@ -34,8 +42,16 @@ public class Interact : MonoBehaviour
             _checkedColliders = Physics.OverlapSphere(transform.position, _interactCheckRadius, _inspectItemLayerMask);
 
             closestCollider = SearchForClosestItem();
-            item = null;
             if (closestCollider == null) return;
+
+            Vector3 rayDir = closestCollider.transform.position - _rayOrigin.position;
+            RaycastHit rayHitInfo = new RaycastHit();
+            Physics.Raycast(_rayOrigin.position, rayDir, out rayHitInfo, 10f, _rayLayerMask);
+            
+            //Check if there's any thing obstructed (to prevent wall checking)
+            if (rayHitInfo.collider != closestCollider) return;
+
+            item = null;
             item = closestCollider.GetComponent<InteractedItem>();
 
             if (item.IsInteracted == true) return;
@@ -47,18 +63,20 @@ public class Interact : MonoBehaviour
 
     private void CheckInteract()
     {
-
         if (item == null) return;
         _checkedColliders = Physics.OverlapSphere(transform.position, _interactCheckRadius, _inspectItemLayerMask);
 
         InteractedItem tempItem = SearchForClosestItem().GetComponent<InteractedItem>();
+        
 
         if (tempItem != item) return;
+            FindObjectOfType<AudioManager>().PlaySound("Interact");
 
         //Trigger Isi Itemnya
         item.TriggerInteract();
 
-        if (item.IsThisADialogueinteract() == false || item.IsInteracted == true) return;
+        if (item.IsThisADialogueinteract() == false || item.IsInteracted == true || interactPressed == true) return;
+        interactPressed = true;
         needSearch = false;
         StartCoroutine(StartDialogue());
         
@@ -72,7 +90,7 @@ public class Interact : MonoBehaviour
 
         Vector3 movTowardsPos = item.ConversationTransform.position;
         yield return new WaitForSeconds(0.4f);
-
+        interactPressed = false;
         _movement.SetMoveTowardDestination(movTowardsPos);
 
         
@@ -89,6 +107,7 @@ public class Interact : MonoBehaviour
         _dialogueTrigger.DisplayDialogues();
         //TriggerDialogue
         item.Interacted();
+        
     }
 
 

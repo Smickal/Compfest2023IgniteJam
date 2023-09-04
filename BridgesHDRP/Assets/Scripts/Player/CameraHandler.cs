@@ -84,10 +84,9 @@ public class CameraHandler : MonoBehaviour
         }
     }
 
-    public void MoveInpectCameraToCustomLoc(Vector3 pos, Vector3 cameraRot)
+    public void MoveInpectCameraToCustomLoc(Vector3 pos)
     {
         _closeUpDialogueCamera.transform.localPosition = pos;
-        //_closeUpDialogueCamera.transform.rotation = Quaternion.Euler(cameraRot);
     }
 
 

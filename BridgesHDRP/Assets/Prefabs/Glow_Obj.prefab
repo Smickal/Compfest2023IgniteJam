@@ -94,7 +94,6 @@ GameObject:
   - component: {fileID: 2791750198165972202}
   - component: {fileID: 7683460279960277502}
   - component: {fileID: 5912785236630791660}
-  - component: {fileID: 5890917707306994943}
   m_Layer: 9
   m_Name: Glow_Obj
   m_TagString: Untagged
@@ -136,6 +135,7 @@ MonoBehaviour:
   _maxDistanceToPlayer: 0.2
   _followSpeed: 3
   _rigidBody: {fileID: 5912785236630791660}
+  _followObj: {fileID: 8498151499708872542}
 --- !u!54 &5912785236630791660
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -163,27 +163,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!135 &5890917707306994943
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6317302529724570292}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.2
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7387425997452280988
 GameObject:
   m_ObjectHideFlags: 0

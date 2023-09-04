@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 3_Happy_Child_MantaRayDrawings
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: We were just kids back then, filled with boundless curiosity and an insatiable
+      appetite for adventure.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: Our family used to take annual trips to the beach, and one year, we found
+      ourselves standing at the shoreline, gazing out at the vast expanse of the
+      ocean.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: It was on that evening, with the sand between our toes and the ocean stretching
+      out before us, that my sister and I stumbled upon a manta ray gliding gracefully
+      through the water.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: It was a mesmerizing sight, the way it danced beneath the surface, its
+      wings undulating like a graceful ballet.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: We watched in awe, our eyes locked on this majestic creature of the deep.
+      And then, as if moved by some unspoken understanding, my sister and I reached
+      for our sketchbooks and pencils.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: When we finished, we held up our drawings to compare.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: They were different, each reflecting our unique perspectives and styles,
+      but they were also the same in a way, bound together by the shared experience
+      of witnessing the manta ray's beauty.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: We carefully tucked those drawings into our beach bag, and as we walked
+      back to our home.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: "Then, we put it on the walls\u2026"
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: Ah this is where it started.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}

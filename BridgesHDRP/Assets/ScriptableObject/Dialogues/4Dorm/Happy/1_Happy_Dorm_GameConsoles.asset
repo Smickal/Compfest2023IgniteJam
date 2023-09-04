@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 1_Happy_Dorm_GameConsoles
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: "My friend and I were in the same boat, both drowning in papers, lectures,
+      and the ever-elusive concept of \"free time.\u201D"
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: But amidst the chaos and sleepless nights, we decided to take a break,
+      a momentary escape from the world of academia.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: That's when we set up our trusty game console in my dorm room, a sanctuary
+      of sorts.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: We picked our favorite multiplayer game, a game we'd played countless times
+      before, and we started a marathon session.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: The sound of controllers clicking and the glow of the screen created an
+      oasis of relaxation within the storm of university life.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: As we played, we forgot about the assignments that loomed over us like
+      dark clouds.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: We laughed, we shouted, and we immersed ourselves in a world of virtual
+      adventure, leaving behind the textbooks and lecture notes for a while.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}

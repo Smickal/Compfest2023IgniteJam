@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class TriggerActivateGameObject : MonoBehaviour
 {
-    [SerializeField] InteractedItem interactedItem;
+    [SerializeField] protected InteractedItem interactedItem;
     [SerializeField] GameObject _gameObject;
 
 
 
-    public void RegisterTrigger()
+    public virtual void RegisterTrigger()
     {
         interactedItem.OnTriggerAction += TriggerObject;
     }

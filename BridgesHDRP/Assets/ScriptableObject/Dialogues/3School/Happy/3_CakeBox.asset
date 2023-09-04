@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 3_CakeBox
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: It started like any other ordinary school day, with the usual hustle and
+      bustle of the hallways and the familiar classroom routines.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: 0.9691833, y: 1.094009, z: -0.8707675}
+  - Text: Little did I know that my friends were conspiring behind my back to make
+      this day extraordinary.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: 0.9691833, y: 1.094009, z: -0.8707675}
+  - Text: As the final bell rang, signaling the end of the school day, I gathered
+      my things, thinking I'd head home for a quiet birthday celebration with my
+      family.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: 0.9691833, y: 1.094009, z: -0.8707675}
+  - Text: It was a surprise birthday party, right there in the heart of our classroom!
+    TriggerSomethingHere: 1
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: 0.9691833, y: 1.094009, z: -0.8707675}
+  - Text: I was utterly stunned, my jaw hanging open in disbelief.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: 0.9691833, y: 1.094009, z: -0.8707675}
+  - Text: My friends rushed toward me, laughing and cheering, and they began singing
+      "Happy Birthday" at the top of their lungs.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: 0.9691833, y: 1.094009, z: -0.8707675}
+  - Text: As I stood there, surrounded by my friends, I couldn't have asked for a
+      better birthday celebration.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 1
+    CameraPos: {x: 0.9691833, y: 1.094009, z: -0.8707675}

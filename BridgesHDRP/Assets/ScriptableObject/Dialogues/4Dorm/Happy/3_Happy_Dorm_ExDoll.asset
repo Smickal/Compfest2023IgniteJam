@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4086df6b9ba64334b91bdd19d8a0390e, type: 3}
+  m_Name: 3_Happy_Dorm_ExDoll
+  m_EditorClassIdentifier: 
+  _chats:
+  - Text: It was during a time when the stress of assignments, exams, and the uncertainty
+      of the future seemed to weigh me down.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: I was grappling with the challenges of university life, feeling overwhelmed
+      and at times, a bit lost.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: she carried a fluffy, cuddly teddy bear. It was adorable, with big, round
+      eyes and a plushy belly.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: "She handed me the teddy bear and said, \"I thought you might need a little
+      extra comfort during these tough times.\u201D"
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: 'I couldn''t help but be touched by her thoughtfulness. '
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}
+  - Text: That teddy bear, which she affectionately named "Lucky," became a source
+      of comfort and solace during some of my most stressful moments.
+    TriggerSomethingHere: 0
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    IsCameraSpecial: 0
+    CameraPos: {x: 0, y: 0, z: 0}
+    CameraRotation: {x: 0, y: 0, z: 0}

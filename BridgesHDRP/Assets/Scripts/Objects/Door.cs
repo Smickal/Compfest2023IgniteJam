@@ -24,6 +24,8 @@ public class Door : MonoBehaviour
     {
         if (isDoorOpened) return;
 
+        FindAnyObjectByType<AudioManager>().PlaySound("OpenDoor");
+
         if(isRight)
         {
             _animator.SetTrigger(doorOpenToRight);

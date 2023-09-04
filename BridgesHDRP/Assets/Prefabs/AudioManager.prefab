@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1270082029639464197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2112026278984260083}
+  - component: {fileID: 7202096154048807277}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2112026278984260083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270082029639464197}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7202096154048807277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270082029639464197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 880d5d2be2008b64ea5b0c0b02b00f44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sounds:
+  - Name: TeleportOut
+    Clip: {fileID: 8300000, guid: f0f0f0ecd18931746894f63005c59418, type: 3}
+    Volume: 1
+    Pitch: 3
+    Source: {fileID: 0}
+    PlayOnAwake: 0
+    Loop: 0
+  - Name: Teleport
+    Clip: {fileID: 8300000, guid: f0f0f0ecd18931746894f63005c59418, type: 3}
+    Volume: 1
+    Pitch: 3
+    Source: {fileID: 0}
+    PlayOnAwake: 0
+    Loop: 0
+  - Name: ChatNext
+    Clip: {fileID: 8300000, guid: b19e9837d70601b46862e50c15b0e07a, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    Source: {fileID: 0}
+    PlayOnAwake: 0
+    Loop: 0
+  - Name: Whoosh
+    Clip: {fileID: 8300000, guid: 7703e80e9aaf5dd4590a64698559bd7a, type: 3}
+    Volume: 1
+    Pitch: 1
+    Source: {fileID: 0}
+    PlayOnAwake: 1
+    Loop: 1
+  - Name: Interact
+    Clip: {fileID: 8300000, guid: 42dbde37254bfd6428c87bb4694b2bd0, type: 3}
+    Volume: 0.2
+    Pitch: 2
+    Source: {fileID: 0}
+    PlayOnAwake: 0
+    Loop: 0
+  - Name: OpenDoor
+    Clip: {fileID: 8300000, guid: 920726090c164264baa0adf6de7c860a, type: 3}
+    Volume: 1
+    Pitch: 1
+    Source: {fileID: 0}
+    PlayOnAwake: 0
+    Loop: 0

@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: a5796ada5727ee14d8a6b5f6662461bc
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - NeverMind Rounded
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 236fe9e27629c1c48bbc7aa63ba9d265, type: 3}
+  - {fileID: 12800000, guid: c0c5e41d130f8dc46b6e0c3344b447d9, type: 3}
+  - {fileID: 12800000, guid: 8037973b0da2c954385c85929f1d4ec8, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

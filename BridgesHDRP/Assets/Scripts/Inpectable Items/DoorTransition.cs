@@ -7,17 +7,18 @@ public class DoorTransition : MonoBehaviour
     // Start is called before the first frame update]
     [SerializeField] InteractedItem _interactedItem;
     [SerializeField] TransitionManager _transitionManager;
-    
+    [SerializeField] bool isMenuTransition = false;
 
     private void Start()
     {
-        _interactedItem.OnTriggerAction += TriggerNextScene;
-    }
-
-
-    private void TriggerNextScene()
-    {
-        _transitionManager.TriggerTransition();
+        if(isMenuTransition == false)
+        {
+            _interactedItem.OnTriggerAction += () => { _transitionManager.TriggerTransition(); };
+        }
+        else
+        {
+            _interactedItem.OnTriggerAction += () => { _transitionManager.TriggerBackToMenu(); };
+        }
     }
 
 }

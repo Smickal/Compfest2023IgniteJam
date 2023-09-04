@@ -66,10 +66,10 @@ AnimatorStateMachine:
     m_Position: {x: 130, y: 180, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7261173639590087086}
-    m_Position: {x: 240, y: 70, z: 0}
+    m_Position: {x: 230, y: 100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3704488872516678505}
-    m_Position: {x: 300, y: -70, z: 0}
+    m_Position: {x: 230, y: -90, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -384969150328884564}
@@ -121,13 +121,13 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: OpenDoorToLeft
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
